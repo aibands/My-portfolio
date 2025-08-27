@@ -1,0 +1,338 @@
+* {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+        scroll-behavior: smooth;
+        scroll-margin-top: 80px;
+}
+
+/*font*/
+h1 {
+    font-family: "Libre Baskerville", serif; 
+    font-size: 84px;
+    font-weight: 400;
+    color: #724B34;
+    background-color: transparent;
+}
+
+h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+    color: #CBA78C;
+    background-color: transparent;
+}
+
+h3 {
+    font-family: "Libre Baskerville", serif; 
+    font-size: 32px;
+    font-weight: 300;
+    color: #CBA78C;;
+    background-color: transparent;
+}
+
+h4 {
+    font-family: "Libre Baskerville", serif; 
+    font-size: 24px;
+    font-weight: 300;
+    color: #724B34;
+    background-color: transparent;
+}
+
+h5 { /*for highlight*/
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #724B34;
+    background-color: transparent;
+}
+
+p, a, ul {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 350;
+    background-color: transparent;
+}
+
+p,ul {
+    color: #CBA78C;
+}
+
+strong {
+    color: #724B34;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 450;
+}
+
+#tag {
+    display: inline-block;
+    text-align: center;
+    background-color: #DCE5EE;
+    color: #CBA78C;
+    font-weight: 400;
+    width: 110px;
+    height: 24px;
+    padding-top: 1px;
+    margin: 10px 10px 30px 0px;
+    border-radius: 4px;
+}
+
+/*header*/
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+
+header .menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+header > a img {
+    width: 70px;
+    height: auto;
+    padding: 10px;
+}
+
+a:link,
+a:visited {
+    color: #724B34;
+}
+
+a:hover {
+    color: #D4B49B;
+}
+
+a:active {
+    color: #D4B49B;
+    text-decoration-line: underline;
+}
+
+a[href="#"] {
+    color: #724B34;
+    text-decoration-line: underline;
+}
+
+/*main*/
+
+.dec {
+    position: absolute;
+    left: 800px;
+    top: 90px;
+    width: 1000px;
+    z-index: 1;
+}
+
+.hero {
+    height: 750px;
+    position: relative;
+}
+
+.herotext {
+    padding-top: 400px;
+    padding-left: 40px;
+}
+
+/*landing-work*/
+
+.work {
+    height: 1500px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.worktext {
+    position: relative;
+    z-index: 1;
+    background: none;
+}
+
+.work img {
+    width: 500px;
+    float: left;
+    border-radius: 8px;
+}
+
+.project {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.projecttext {
+    float: left;
+    width: 500px;
+    text-align: left;
+    padding-top: 100px;
+    margin-left: 24px;
+}
+
+/*work*/
+.title {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.title img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content {
+    margin: 20px;
+    text-align: center;
+}
+
+/* sidenav */
+.sidenav {
+    display: inline-block;
+    width: 400px;
+    height: 600px;
+    text-align: left;
+    position: sticky;
+    top: 100px;
+}
+
+.sidenav li {
+    margin: 10px;
+    list-style: none;
+}
+
+.contenttext {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    
+}
+
+.contenttext ul {
+    list-style: circle;
+    margin-left: 20px;
+}
+
+.contenttext img {
+    text-align: center;
+    margin: 20px 20px 0px 150px;
+    width: 600px;
+}
+
+.contenttext video {
+    margin: 20px;
+}
+
+.introleft {
+    display: inline-block;
+    width: 900px;
+}
+
+.introright {
+    display: inline-block;
+    width: 200px;
+    margin-left: 60px;
+}
+
+#overview, #problem, #solution, #persona, #ia, #userflow, #sketch, #uiinspi, #designsystem, #mockup, #testing, #key {
+    margin-bottom: 60px;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: scroll;
+}
+
+/* about */
+.about {
+    margin: 100px;
+    gap: 50px;
+}
+
+.abouttext p {
+    margin-top: 20px;
+}
+
+.aboutcontent {
+    vertical-align: center;
+}
+
+.abouttext {
+    float: left;
+    width: 1000px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+.aboutcontent img {
+    float: right;
+    width: 200px;
+    float: right;
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+
+.experience {
+    clear: both;
+}
+
+.experiencetext {
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Footer*/
+
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 30px 0;
+}
+
+.contact {
+    width: 500px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    'head head head'
+    'email linkedin github';
+    justify-items: center;
+}
+
+#footerhead {
+ grid-area: head;
+}
+
+#email {
+  grid-area: email;
+}
+
+#linkedin {
+  grid-area: linkedin;
+}
+
+#github {
+  grid-area: github;
+}
+
+.contact a {
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    gap: 4px;
+}
