@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work/hit the buzzer</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+    header, body {
+        background-color: #F8F2EF;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <a href="../index.html"><img src="../asset/img/logo2.svg" alt="logo"></a>
+            <ul>
+                <li><a href="../index.html#work">Work</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="https://drive.google.com/file/d/15YbkNIxGI7X22NuiCNd2eroaM2elTUoH/view?usp=sharing">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="title">
+            <h1>Hit the buzzer</h1>
+            <p>A learning application that helps users learn with fun, featuring options to create private classrooms or<br> random decks of knowledge, then challenge others in a familiar game show style</p>
+            <img src="../asset/img/Hit the buzzer/Cover2.png" alt="hit the buzzer photo">    
+        </section>
+
+        <section class="content">
+            <nav class="sidenav"> <!--Sidenav-->
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#start">How did it start?</a></li>
+                    <li><a href="#problem">Problem</a></li>
+                    <li><a href="#solution">Solution</a></li>
+                    <li><a href="#persona">Persona</a></li>
+                    <li><a href="#ia">Information Architecture</a></li>
+                    <li><a href="#userflow">User flow</a></li>
+                    <li><a href="#sketch">Sketching & Wireframe</a></li>
+                    <li><a href="#uiinspi">UI inspiration</a></li>
+                    <li><a href="#designsystem">Design system</a></li>
+                    <li><a href="#mockup">Mock up</a></li>
+                    <li><a href="#testing">Testing</a></li>
+                    <li><a href="#key">Key takeaway</a></li>
+                </ul>    
+            </nav>
+
+            <div class="contenttext">
+                <div id="overview"><!--Overview-->
+                    <div class="introleft" style="width: 600px;">
+                        <h3 style="color: #724B34">💡 Overview</h3><br>
+                        <p><strong>Hit the Buzzer!</strong>is an app that I developed for my solo student project in my Special Topics in UX Design class. My interest in gamification drove me to create this app, as I find that gamification enhances user engagement. <br><br>
+                        In my free time, I work part-time as a Korean teacher for Thai students. I found that I really enjoy providing techniques and experiences to my students. However, learning new languages can be hard and challenging, leading to burnout. Therefore, I want to use that experience to create gamification in an educational context, aiming to make learning an enjoyable experience<br><br>
+                        The inspiration for Hit the Buzzer! came from the Thai famous YouTuber "Kuen Kru Pai Yang" (which means "Are you still remember this?"). I found it entertaining when the host asked a question and allowed participants who hit the buzzer to answer. This experience sparked the idea that creating an app with a similar concept could be both enjoyable and educational.</p>
+                    </div>
+                    <div class="introright">
+                        <h4>Role</h4>
+                        <p>UX/UI designer</p><br>
+                        <h4>Duration</h4>
+                        <p>2.5 Weeks</p><br>
+                        <h4>Platform</h4>
+                        <p>Mobile</p><br>
+                        <h4>Tools</h4>
+                        <p>Illustrator, Figma</p>
+                    </div>
+                </div>            
+
+                <div id="problem"><!--Problem-->
+                    <div class="introleft">
+                        <h3 style="color: #724B34">☄️ Problem</h3><br>
+                        <p>While teaching and asking questions, I always observe my students and have identified two significant problems</p>
+                        <h5>Finding &cudarrr;</h5>
+                        <ul>
+                            <li><strong>Lack of Engagement in Class</strong>: Traditional teaching methods may struggle to capture students' attention, leading to disinterest in the learning process. </li>
+                            <li><strong>Guessing Behavior</strong>: I tried to use some existing learning applications with my students but some of them tend to guess answers hastily during competitive question-answering scenarios where response speed impacts scores. This behavior can result in overlooking the actual content of questions and neglecting careful consideration of answer choices</li>
+                        </ul>
+                    </div>
+                </div>              
+
+                <div id="solution"><!--Solution-->
+                    <div class="introleft">
+                        <h3 style="color: #724B34">🌟 Solution</h3><br>
+                        <p>As a UX designer, my goal is to assist users in learning while making it enjoyable and to decrease guessing behavior when answering questions. I aim to achieve this by developing an application with a <strong> buzzer feature </strong>that requires users to hit the buzzer before answering. If a user hits the buzzer but provides the wrong answer, they will lose points. Therefore, users need to ensure they are confident about their answer before hitting the buzzer to avoid losing the game.</p>
+                        <video width="150px" autoplay muted loop><source src="../asset/img/Hit the buzzer/play now.mp4" type="video/mp4"></video>
+                    </div>
+                </div> 
+
+                <div id="additional"><!--Additional feature-->
+                    <div class="introleft">
+                        <h3 style="color: #724B34">🪄Additional feature</h3><br>
+                        <p>While trying to solve the problem, I considered additional features that could be added to this app to make it <strong>a comprehensive learning application rather than just a gamification</strong></p>
+                    </div>
+                </div>
+
+                <div id="persona"><!--Persona-->
+                    <div class="introleft">
+                        <h3 style="color: #724B34">🧑‍💼 Persona</h3><br>
+                        <p>After defining the solution and additional features, I identified two distinct personas to gain a deeper understanding of users' motivations and goals. The first persona is <strong>Jenna, a teacher seeking to create enjoyable classes with increased student interaction.</strong> The second persona is <strong>Kevin, who loves to spend his free time learning new things.</strong></p>
+                        <img src="../asset/img/Hit the buzzer/persona1.png" alt="jenna">
+                        <img src="../asset/img/Hit the buzzer/persona2.png" alt="kevin">
+                    </div> 
+                </div>
+
+                <div id="ia"><!--Information Architecture-->
+                    <div class="introleft">
+                        <h3 style="color: #724B34">📚 Information Architecture</h3><br>
+                        <img src="../asset/img/Hit the buzzer/IA.png" alt="Information Architecture"> 
+                    </div> 
+                </div>
+
+                <div id="userflow"><!--User flow-->
+                    <div class="introleft">
+                        <h3 style="color: #724B34">🎮 Game flow</h3><br>
+                        <img src="../asset/img/Hit the buzzer/Game flow.png" alt="User flow">
+                    </div> 
+                </div>
+                
+                <div id="sketch"><!--Sketching & Wireframe-->
+                    <div class="introleft">
+                        <h3 style="color: #724B34">🖍️ Wireframe</h3><br>
+                        <p>After understanding all aspects of the application's process, I translated my ideas into a digital wireframe. This process involved capturing images of each screen, providing a visual representation of the user interface and the overall structure of the digital product</p>
+                        <div class="wireframe"> 
+                            <img src="../asset/img/Hit the buzzer/Wireframe.png" alt="wireframe">
+                        </div>
+                    </div> 
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
