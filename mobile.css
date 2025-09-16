@@ -1,4 +1,9 @@
 @media screen and (max-width: 768px) {
+
+    /* * {
+        overflow-x: hidden;
+    }
+     */
     /*font*/
     h1 {
         font-family: 'Inconsolata';
@@ -194,6 +199,10 @@
         font-stretch: 50% 200%;
     }
 
+    body {
+        padding-bottom: 13rem;
+    }
+
     .hero {
         width: 100%;
         height: 100dvh;
@@ -204,6 +213,7 @@
         color: var(--font-white);
         font-size: 8em;
         font-family: 'Inconsolata';
+        overflow-x: hidden;
     }
 
     .hi {
@@ -271,7 +281,7 @@
     }
 
     /* arrow */
-
+/* neeeeeed fix white mode */
 
     .scroll {
         margin: 3em 0em;
@@ -342,14 +352,13 @@
         width: 100%;
         height: 100%;
         border-radius: 0.5em;
+        display: block;
     }
 
-    .project-img {
-        width: 25em;
+    .project-img-wrap {
         border-radius: 0.5em;
         position: relative;
         display: inline-block;
-        overflow: hidden;
         cursor: pointer;
         box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
     }
