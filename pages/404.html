@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../tablet.css">
+    <link rel="stylesheet" href="../mobile.css"> 
+     <script src="https://kit.fontawesome.com/23f8d4ab18.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../asset/img/logo.svg" alt="logo" id="logo"></a>
+        <nav class="menu">
+            <!-- for mode -->
+            <input type="checkbox" id="dark-toggle"> 
+            <label for="dark-toggle" class="dark-toggle-label" style="color: var(--font-blue)"><i class="fa-solid fa-snowman"></i></label>
+            <!-- menu -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="toggle-label" style="color: var(--font-blue)">&#9776</label>
+            <!-- menu open -->
+            <div class="overlay">
+                <label for="menu-toggle" class="overlay-bg"></label>
+                <div class="overlay-content">
+                    <label for="menu-toggle" class="close-btn"><a>x</a></label>
+                    <ul>
+                        <li><a href="#">WORK</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">RESUME <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>     
+        </nav>
+    </header>
+
+    <main>
+        <div class="notfound">
+            <div class="notfound-404">
+                <h1>4</h1>
+                <h1><i class="fa-regular fa-face-sad-tear"></i></h1>
+                <h1>4</h1>
+            </div>
+            <p>Sorry, this page is not available right now</p>
+            <p class="viewproject"><a href="#"><p>Go back to homepage &rarr;</a></p>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,6 +1,13 @@
 @media screen and (max-width: 768px) {
 
     /*font*/
+
+    @font-face {
+    font-family: 'Inconsolata';
+    src: url('https://ggayane.github.io/css-experiments/Inconsolata-VF.ttf');
+    font-weight: 275 900;
+    font-stretch: 50% 200%;
+}
     h1 {
         font-family: 'Inconsolata';
         font-size: 4rem;
@@ -27,7 +34,7 @@
 
     h4 {
         font-family: 'Inconsolata';
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-variation-settings: "wght" 900, "wdth" 120;
         color: var(--font-white);
         background-color: transparent;
@@ -36,7 +43,7 @@
     h5 {
         /*for highlight*/
         font-family: 'Inconsolata';
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 400;
         color: var(--font-white);
         background-color: transparent;
@@ -46,7 +53,7 @@
     a,
     ul {
         font-family: 'Inconsolata';
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 350;
         background-color: transparent;
     }
@@ -57,8 +64,8 @@
     }
 
     strong {
-        color: var(--font-blue);
         font-family: 'Inconsolata';
+        color: var(--font-blue);
         font-size: 16px;
         font-weight: 450;
     }
@@ -156,7 +163,6 @@
     }
 
     .overlay-content a {
-        font-family: 'Inconsolata';
         font-size: 2.5rem;
         font-weight: 500;
         color: var(--font-white);
@@ -188,13 +194,6 @@
 
     /* hero section */
 
-    @font-face {
-        font-family: 'Inconsolata';
-        src: url('https://ggayane.github.io/css-experiments/Inconsolata-VF.ttf');
-        font-weight: 275 900;
-        font-stretch: 50% 200%;
-    }
-
     body {
         padding-bottom: 2rem;
     }
@@ -208,7 +207,6 @@
         align-items: center;
         color: var(--font-white);
         font-size: 8em;
-        font-family: 'Inconsolata';
         overflow-x: hidden;
     }
 
@@ -416,4 +414,27 @@
         gap: 4px;
     }
 
+    /*-----------404-------------*/
+    .notfound {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100dvh;
+    }
+
+    .notfound-404 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .notfound-404 h1 {
+        font-size: 10rem;
+    }
+
+    .notfound p {
+        margin-bottom: 0.5rem;
+    }
 }
