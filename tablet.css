@@ -1,35 +1,6 @@
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    scroll-behavior: smooth;
-    scroll-margin-top: 80px;
-}
-
-:root {
-    overflow-x: hidden;
-    font-size: 16px;
-    /* darkmode */
-    --backgroud-dark: #181818;
-    --grey: #373737;
-    --font-white: #f8f8f8;
-    --font-grey: #A8A8A8;
-    --font-blue: #799DFF;
-}
-
-@media screen and (min-width: 768px) {
-
+@media screen and (max-width: 1023px) {
     /*font*/
     h1 {
-        font-family: 'Inconsolata';
-        font-size: 5rem;
-        font-weight: 500;
-        color: var(--font-white);
-        background-color: transparent;
-    }
-
-    h2 {
         font-family: 'Inconsolata';
         font-size: 4rem;
         font-weight: 500;
@@ -37,9 +8,17 @@
         background-color: transparent;
     }
 
+    h2 {
+        font-family: 'Inconsolata';
+        font-size: 3rem;
+        font-weight: 500;
+        color: var(--font-white);
+        background-color: transparent;
+    }
+
     h3 {
         font-family: 'Inconsolata';
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-variation-settings: "wght" 900, "wdth" 150;
         color: var(--font-white);
         background-color: transparent;
@@ -97,29 +76,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 2rem;
+        padding: 1rem 0.1rem;
     }
 
     .menu {
         display: flex;
         gap: 1em;
         align-items: center;
-        padding: 1rem 3rem;
+        padding: 1rem 2rem;
     }
 
     #logo {
         width: 2rem;
         height: auto;
         margin-left: 3rem;
-    }
-
-    #logo:hover {
-        animation: pulse;
-        animation-duration: 1s;
-    }
-
-    .toggle-label:hover, .dark-toggle-label:hover {
-        color: var(--font-grey);
     }
 
     label[for="dark-toggle"] {
@@ -186,17 +156,16 @@
 
     .overlay-content a {
         font-family: 'Inconsolata';
-        font-size: 4.5rem;
+        font-size: 2.5rem;
         font-weight: 500;
         color: var(--font-white);
         background-color: transparent;
-
     }
 
     .close-btn {
         position: absolute;
-        top: -10rem;
-        left: 75rem;
+        top: -9rem;
+        left: 40rem;
         cursor: pointer;
     }
 
@@ -216,14 +185,6 @@
         color: var(--font-white);
     }
 
-    a:hover {
-        color: var(--font-grey);
-    }
-
-    a:active {
-        color: var(--font-blue);
-    }
-
     /* hero section */
 
     @font-face {
@@ -232,17 +193,21 @@
         font-weight: 275 900;
         font-stretch: 50% 200%;
     }
+    
+    body {
+        padding-bottom: 2rem;
+    }
 
     .hero {
-        width: 100%;              
-        height: 100dvh;  
+        width: 100%;
+        height: 100dvh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         color: var(--font-white);
-        font-size: 8em;
         font-family: 'Inconsolata';
+        overflow-x: hidden;
     }
 
     .hi {
@@ -250,11 +215,12 @@
     }
 
     .static {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-variation-settings: "wght" 900, "wdth" 200;
     }
 
     .variable {
+        font-size: 5rem;
         display: flex;
         font-variation-settings: "wght" 275, "wdth" 50;
         text-align: left;
@@ -294,7 +260,6 @@
         }
     }
 
-
     /*landing-work*/
 
     .feature-work {
@@ -306,16 +271,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0rem 30rem;
+        padding: 0em 2rem;
     }
 
     /* arrow */
-
+/* neeeeeed fix white mode */
 
     .scroll {
         margin: 3em 0em;
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
         border: 2px solid var(--font-white);
         border-radius: 50%;
         position: relative;
@@ -326,9 +291,9 @@
             content: '';
             position: absolute;
             top: 15px;
-            left: 20px;
-            width: 18px;
-            height: 18px;
+            left: 16.5px;
+            width: 10px;
+            height: 10px;
             border-left: 2px solid var(--font-white);
             border-bottom: 2px solid var(--font-white);
             transform: rotate(-45deg);
@@ -368,8 +333,8 @@
     .work {
         display: grid;
         grid-template-columns: repeat(2, 3fr);
-        gap: 6em;
-        padding: 3em 8em;
+        gap: 3em;
+        padding: 3em 4em;
     }
 
     .project {
@@ -431,6 +396,7 @@
         padding: 0.5em;
     }
 
+
     /*Footer*/
 
     footer {
@@ -459,128 +425,5 @@
         justify-content: center;
         gap: 4px;
     }
-
-    /*-----------work page-------------*/
-    .title {
-        text-align: center;
-        padding-top: 100px;
-    }
-
-    .title img {
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .content {
-        margin: 20px;
-        text-align: center;
-    }
-
-    /* sidenav */
-    .sidenav {
-        display: inline-block;
-        width: 400px;
-        height: 600px;
-        text-align: left;
-        position: sticky;
-        top: 100px;
-    }
-
-    .sidenav li {
-        margin: 10px;
-        list-style: none;
-    }
-
-    .contenttext {
-        display: inline-block;
-        text-align: left;
-        vertical-align: top;
-    }
-
-    .contenttext ul {
-        list-style: circle;
-        margin-left: 20px;
-    }
-
-    .contenttext img {
-        text-align: center;
-        margin: 20px 20px 0px 150px;
-        width: 600px;
-    }
-
-    .contenttext video {
-        margin: 20px;
-    }
-
-    .introleft {
-        display: inline-block;
-        width: 900px;
-    }
-
-    .introright {
-        display: inline-block;
-        width: 200px;
-        margin-left: 60px;
-    }
-
-    #overview,
-    #problem,
-    #solution,
-    #persona,
-    #ia,
-    #userflow,
-    #sketch,
-    #uiinspi,
-    #designsystem,
-    #mockup,
-    #testing,
-    #key {
-        margin-bottom: 60px;
-    }
-
-    .carousel-container {
-        display: flex;
-        overflow: scroll;
-    }
-
-    /*-----------about page-------------*/
-    .about {
-        margin: 100px;
-        gap: 50px;
-    }
-
-    .abouttext p {
-        margin-top: 20px;
-    }
-
-    .aboutcontent {
-        vertical-align: center;
-    }
-
-    .abouttext {
-        float: left;
-        width: 1000px;
-        margin-right: 30px;
-        margin-bottom: 50px;
-    }
-
-    .aboutcontent img {
-        float: right;
-        width: 200px;
-        float: right;
-        margin-top: 130px;
-        margin-bottom: 50px;
-    }
-
-    .experience {
-        clear: both;
-    }
-
-    .experiencetext {
-        clear: both;
-        display: flex;
-        justify-content: space-between;
-    }
-
 }
+
