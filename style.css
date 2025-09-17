@@ -316,11 +316,12 @@
         margin: 3em 0em;
         width: 4rem;
         height: 4rem;
-        border: 2px solid var(--font-white);
+        border: 2px solid currentColor;
         border-radius: 50%;
         position: relative;
         animation: down 1.5s infinite;
         -webkit-animation: down 1s infinite;
+        color: var(--font-white);
 
         &::before {
             content: '';
@@ -329,8 +330,8 @@
             left: 20px;
             width: 18px;
             height: 18px;
-            border-left: 2px solid var(--font-white);
-            border-bottom: 2px solid var(--font-white);
+            border-left: 2px solid currentColor;
+            border-bottom: 2px solid currentColor;
             transform: rotate(-45deg);
         }
     }
