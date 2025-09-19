@@ -119,11 +119,12 @@
         width: 2rem;
         height: auto;
         margin-left: 3rem;
+        display: inline-block;
+        transition: transform 0.3s ease-in-out;
     }
 
     #logo:hover {
-        animation: pulse;
-        animation-duration: 1s;
+        transform: scale(1.5);
     }
 
     .toggle-label:hover, .dark-toggle-label:hover {
