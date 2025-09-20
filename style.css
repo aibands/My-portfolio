@@ -11,10 +11,11 @@
     overflow-x: hidden;
     font-size: 16px;
     font-family: 'Inconsolata';
-    /* darkmode */
+    /* color */
     --backgroud-dark: #181818;
     --grey: #373737;
     --font-white: #f8f8f8;
+    --font-white: #f8f8f7; 
     --font-grey: #A8A8A8;
     --font-blue: #799DFF;
 }
@@ -70,9 +71,7 @@
         background-color: transparent;
     }
 
-    p,
-    a,
-    ul {
+    p, a, ul {
         font-family: 'Inconsolata';
         font-size: 1rem;
         font-weight: 350;
@@ -130,17 +129,20 @@
     .toggle-label:hover, .dark-toggle-label:hover {
         color: var(--font-grey);
     }
+    
+    .dark-toggle-label img, #dark-toggle:checked + .dark-toggle-label {
+        width: 50px;
+    }
 
     label[for="dark-toggle"] {
         font-size: 2.5rem;
         font-weight: 500;
-        color: var(--font-white);
         transition: transform 0.3s;
         cursor: pointer;
     }
 
     #dark-toggle:checked + .dark-toggle-label {
-        content: ""; 
+        content: url(./asset/img/cloud.svg);
         transform: rotate(360deg);
     }   
 
@@ -154,7 +156,6 @@
     label[for="menu-toggle"] {
         font-size: 3.5rem;
         font-weight: 500;
-        color: var(--font-white);
         cursor: pointer;
     }
 
@@ -168,7 +169,6 @@
         backdrop-filter: blur(30px);
         display: flex;
         justify-content: center;
-        align-items: left;
         padding-left: 3rem;
         flex-direction: column;
         transform: translateY(-100%);
@@ -319,10 +319,11 @@
         border-radius: 50%;
         position: relative;
         animation: down 1.5s infinite;
-        -webkit-animation: down 1s infinite;
+        /* -webkit-animation: down 1s infinite; */
         color: var(--font-white);
-
-        &::before {
+    }
+    
+    .scroll::before {
             content: '';
             position: absolute;
             top: 15px;
@@ -332,7 +333,6 @@
             border-left: 2px solid currentColor;
             border-bottom: 2px solid currentColor;
             transform: rotate(-45deg);
-        }
     }
 
     @keyframes down {
@@ -349,7 +349,7 @@
         }
     }
 
-    @-webkit-keyframes down {
+    /* @-webkit-keyframes down {
         0% {
             transform: translate(0);
         }
@@ -361,7 +361,7 @@
         40% {
             transform: translate(0);
         }
-    }
+    } */
 
     /* work */
 
@@ -420,7 +420,7 @@
         gap: 1em;
     }
 
-    #tag-text {
+    .tag-text {
         display: flex;
         justify-content: center;
         align-items: center;

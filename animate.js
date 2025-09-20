@@ -1,3 +1,5 @@
+// FAQ
+
 document.querySelectorAll(".box-title").forEach(title => {
   title.addEventListener("click", () => {
     const parentBox = title.parentElement;
@@ -12,3 +14,10 @@ document.querySelectorAll(".box-title").forEach(title => {
     parentBox.classList.toggle("active");
   });
 });
+
+// close overlay when load new page
+window.addEventListener('load', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    if (menuToggle) menuToggle.checked = false; 
+  });
+

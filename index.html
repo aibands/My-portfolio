@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="tablet.css">
     <link rel="stylesheet" href="mobile.css"> 
      <script src="https://kit.fontawesome.com/23f8d4ab18.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -17,20 +17,20 @@
         <nav class="menu">
             <!-- for mode -->
             <input type="checkbox" id="dark-toggle"> 
-            <label for="dark-toggle" class="dark-toggle-label" style="color: var(--font-blue)"><i class="fa-solid fa-snowman"></i></label>
+            <label for="dark-toggle" class="dark-toggle-label" style="color: var(--font-blue)"><img src="./asset/img/snow.svg" alt="snow" id="snow"></label>
             <!-- menu -->
             <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="toggle-label" style="color: var(--font-blue)">&#9776</label>
+            <label for="menu-toggle" class="toggle-label" style="color: var(--font-blue)">&#9776;</label>
             <!-- menu open -->
             <div class="overlay">
                 <label for="menu-toggle" class="overlay-bg"></label>
                 <div class="overlay-content">
                     <label for="menu-toggle" class="close-btn"><a>x</a></label>
                     <ul>
-                        <li><a href="#">WORK</a></li>
-                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#work">WORK</a></li>
+                        <li><a href="./pages/about.html">ABOUT</a></li>
                         <li><a href="#">RESUME <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
             </div>     
@@ -39,7 +39,7 @@
 
     
     <main>
-        <section class="hero">
+        <section class="hero" aria-label="hero">
             <div class="hi">
                 <div class="variable"><span class="animated-text">DESIGNER</span>&DEVELOPER</div>
                 <div class="static">HELLO, I'M AIYA</div>
@@ -47,29 +47,29 @@
         </section>
 
        <!--Feature work--> 
-        <section class="feature-work animate__animated animate__fadeIn"> 
+        <section class="feature-work" aria-label="featured work"> 
             <div class="intro-text">
                 <h3>All these design are made with <span style="color: var(--font-blue)">love</span></h3>
                 <div class="scroll"></div>
             </div>
             
             
-            <div class="work">
+            <div class="work" id="work">
 
             <!--Fanciti-->
                 <div class="project">
-                    <div class="project-img-wrap">
+                    <a href="./pages/404.html" class="project-img-wrap">
                         <img src="./asset/img/Fanciti_mockup.png" alt="Fanciti">
-                    </div>
+                    </a>
                     <div class="project-text">
                         <h4>Fanciti</h4>
                         <p>As an intern at Morethink Solutions, I contributed to building a platform connecting Creators, Brands, and Fans, fostering authentic and vibrant communities.</p>
                         <div class="tag">
-                            <p id="tag-text">Internship</p> 
-                            <p id="tag-text">Web design</p> 
-                            <p id="tag-text">Survey</p> 
+                            <p class="tag-text">Internship</p> 
+                            <p class="tag-text">Web design</p> 
+                            <p class="tag-text">Survey</p> 
                         </div>
-                        <p class="viewproject"><a href="#"><p>View project &rarr;</a></p>
+                        <p class="viewproject"><a href="">View project &rarr;</a></p>
                     </div>
                 </div>
 
@@ -82,28 +82,28 @@
                         <h4>Fintrack Pro</h4>
                         <p>Building an application for @Fintrack Pro to help users track income and expenses, set budgets, and achieve their financial goals.</p>
                         <div class="tag">
-                            <p id="tag-text">App design</p> 
-                            <p id="tag-text">Dashboard</p> 
-                            <p id="tag-text">Financial</p> 
+                            <p class="tag-text">App design</p> 
+                            <p class="tag-text">Dashboard</p> 
+                            <p class="tag-text">Financial</p> 
                         </div>
-                        <p class="viewproject"><a href="#"><p>View project &rarr;</a></p>
+                        <p class="viewproject"><a href="">View project &rarr;</a></p>
                     </div>
                 </div>    
             
             <!--Prime Munchie-->
                 <div class="project">
                     <div class="project-img-wrap">
-                        <img src="./asset/img/Prime Munchie.png" alt="Prime munchie">
+                        <img src="./asset/img/Prime_Munchie.png" alt="Prime munchie">
                     </div>
                     <div class="project-text">
                         <h4>Prime Munchie</h4>
                         <p>A meal prep service platform that helps people save time with food, offering meals prepared by professional chefs.</p>
                         <div class="tag">
-                            <p id="tag-text">Web design</p> 
-                            <p id="tag-text">Branding</p> 
-                            <p id="tag-text">E-commerse</p> 
+                            <p class="tag-text">Web design</p> 
+                            <p class="tag-text">Branding</p> 
+                            <p class="tag-text">E-commerse</p> 
                         </div>
-                        <p class="viewproject"><a href="#"><p>View project &rarr;</a></p>
+                        <p class="viewproject"><a href="">View project &rarr;</a></p>
                     </div>
                 </div>    
 
@@ -116,27 +116,27 @@
                         <h4>Under the roof</h4>
                         <p>An application designed to foster peace and reduce conflicts related to shared living spaces among housemates</p>
                         <div class="tag">
-                            <p id="tag-text">App design</p> 
-                            <p id="tag-text">Branding</p> 
-                            <p id="tag-text">Interview</p>
+                            <p class="tag-text">App design</p> 
+                            <p class="tag-text">Branding</p> 
+                            <p class="tag-text">Interview</p>
                         </div>
-                        <p class="viewproject"><a href="#"><p>View project &rarr;</a></p>
+                        <p class="viewproject"><a href="">View project &rarr;</a></p>
                     </div>
                 </div>
 
                 <!--Hit the Buzzer!-->
                 <div class="project">
                     <div class="project-img-wrap">
-                        <img src="./asset/img/Hit the buzzer/Cover.png" alt="Hit the buzzer">
+                        <img src="./asset/img/Hit_the_buzzer/Cover.png" alt="Hit the buzzer">
                     </div>
                     <div class="project-text">
                         <h4>Hit the buzzer!</h4>
                         <p>A learning application that helps users learn with fun, featuring options to create private classrooms or random decks of knowledge, then challenge others in a familiar game show style</p>
                         <div class="tag">
-                            <p id="tag-text">App design</p> 
-                            <p id="tag-text">Gamify</p> 
-                            <p id="tag-text">Branding</p> 
-                            <p id="tag-text">Survey</p>
+                            <p class="tag-text">App design</p> 
+                            <p class="tag-text">Gamify</p> 
+                            <p class="tag-text">Branding</p> 
+                            <p class="tag-text">Survey</p>
                         </div>
                         <p class="viewproject"><a href="">View project &rarr;</a></p>
                     </div>
@@ -145,15 +145,15 @@
                 <!--WoofWoof-->
                 <div class="project">
                     <div class="project-img-wrap">
-                        <img src="./asset/img/Woof woof/Cover1.png" alt="Woof woof">
+                        <img src="./asset/img/Woof_woof/Cover1.png" alt="Woof woof">
                     </div>
                     <div class="project-text">
                         <h4>Woof woof</h4>
                         <p>A dog food website that aims to help pet owners overcome challenges by providing guidance on selecting quality dog food and planning the best meals for their furry friends</p>
                         <div class="tag">
-                            <p id="tag-text">Web design</p> 
-                            <p id="tag-text">Branding</p> 
-                            <p id="tag-text">E-commerse</p> 
+                            <p class="tag-text">Web design</p> 
+                            <p class="tag-text">Branding</p> 
+                            <p class="tag-text">E-commerse</p> 
                         </div>
                         <p class="viewproject"><a href="">View project &rarr;</a></p>
                     </div>
@@ -172,5 +172,7 @@
             </div>    
         </div>
     </footer>
+
+    <script src="../animate.js"></script>
 </body>
 </html>
