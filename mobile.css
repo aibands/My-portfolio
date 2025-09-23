@@ -95,11 +95,11 @@
     }
 
     .menu .toggle-label {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     #snow {
-        width: 1.5rem;
+        width: 2rem;
     }
 
 
@@ -221,6 +221,11 @@
         color: var(--font-white);
         font-size: 8em;
         overflow-x: hidden;
+    }
+
+    .hero img{
+        margin-top: 2rem;
+        width: 10rem;
     }
 
     .hi {

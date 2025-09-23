@@ -223,6 +223,11 @@
         overflow-x: hidden;
     }
 
+    .hero img{
+        margin-top: 2rem;
+        width: 10rem;
+    }
+
     .hi {
         width: 90vw;
     }
