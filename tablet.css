@@ -95,6 +95,15 @@
         padding: 1rem 2rem;
     }
 
+    .menu .toggle-label {
+        font-size: 2rem;
+    }
+
+    #snow {
+        width: 2rem;
+    }
+
+
     #logo {
         width: 2rem;
         height: auto;

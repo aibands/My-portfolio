@@ -26,7 +26,7 @@
 
     h3 {
         font-family: 'Inconsolata';
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-variation-settings: "wght" 900, "wdth" 150;
         color: var(--font-white);
         background-color: transparent;
@@ -93,6 +93,15 @@
         align-items: center;
         padding: 1rem 2rem;
     }
+
+    .menu .toggle-label {
+        font-size: 1.5rem;
+    }
+
+    #snow {
+        width: 1.5rem;
+    }
+
 
     #logo {
         width: 2rem;

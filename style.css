@@ -15,7 +15,6 @@
     --backgroud-dark: #181818;
     --grey: #373737;
     --font-white: #f8f8f8;
-    --font-white: #f8f8f7; 
     --font-grey: #A8A8A8;
     --font-blue: #799DFF;
 }
@@ -114,6 +113,14 @@
         padding: 1rem 3rem;
     }
 
+    .menu .toggle-label {
+        font-size: 2rem;
+    }
+
+    #snow {
+        width: 2rem;
+    }
+
     #logo {
         width: 2rem;
         height: auto;
@@ -143,6 +150,7 @@
 
     #dark-toggle:checked + .dark-toggle-label {
         content: url(./asset/img/cloud.svg);
+        width: 2rem;
         transform: rotate(360deg);
     }   
 
@@ -194,7 +202,7 @@
     }
 
     .overlay-content a {
-        font-size: 4.5rem;
+        font-size: 3rem;
         font-weight: 500;
         color: var(--font-white);
         background-color: transparent;
@@ -207,6 +215,13 @@
         cursor: pointer;
     }
 
+    .close-btn a {
+        width: 3rem;
+        font-weight: 500;
+        color: var(--font-white);
+        background-color: transparent;
+    }
+    
     .overlay-bg {
         position: absolute;
         inset: 0;
@@ -305,7 +320,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0rem 30rem;
+        padding: 0rem 25rem;
     }
 
     /* arrow */
