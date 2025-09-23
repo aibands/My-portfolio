@@ -21,7 +21,9 @@ Three Featured Projects:
 3. Go to the **Resume** page to download my resume in PDF format.
 
 # Technologies Used
-- HTML, CSS
+- HTML
+- CSS
+- JavaScript
 - Figma
 - Adobe 
 
