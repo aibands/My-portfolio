@@ -124,6 +124,7 @@
 
     #dark-toggle:checked + .dark-toggle-label {
         content: url(./asset/img/cloud.svg);
+        width: 2rem;
         transform: rotate(360deg);
     }   
 
