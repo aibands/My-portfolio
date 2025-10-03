@@ -21,3 +21,31 @@ window.addEventListener('load', () => {
     if (menuToggle) menuToggle.checked = false; 
   });
 
+// SideNav
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".sidenav a");
+
+// Highlight on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${entry.target.id}`) {
+          link.classList.add("active");
+        }
+      });
+    }
+  });
+});
+sections.forEach((section) => observer.observe(section));
+
+// Highlight on click
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.forEach((lnk) => lnk.classList.remove("active"));
+    link.classList.add("active");
+  });
+});
+
