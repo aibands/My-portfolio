@@ -5,35 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>work/undertheroof</title>
     <link rel="stylesheet" href="../style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <style>
-    header, body {
-        background-color: #F8F2EF;
-    }
-    </style>
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css"> 
+     <script src="https://kit.fontawesome.com/23f8d4ab18.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
+        <a href="#"><img src="../asset/img/logo.svg" alt="logo" id="logo"></a>
         <nav class="menu">
-            <a href="../index.html"><img src="../asset/img/logo2.svg" alt="logo"></a>
             <ul>
-                <li><a href="../index.html#work">Work</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="https://drive.google.com/file/d/15YbkNIxGI7X22NuiCNd2eroaM2elTUoH/view?usp=sharing">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="">Work</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
+        <!-- forphone -->
+        <!-- <nav class="menu_mobile">
+            
+            <input type="checkbox" id="dark-toggle"> 
+            <label for="dark-toggle" class="dark-toggle-label" style="color: var(--font-blue)"><img src="./asset/img/snow.svg" alt="snow" id="snow"></label>
+           
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="toggle-label" style="color: var(--font-blue)">&#9776;</label>
+            
+            <div class="overlay">
+                <label for="menu-toggle" class="overlay-bg"></label>
+                <div class="overlay-content">
+                    <label for="menu-toggle" class="close-btn"><a>x</a></label>
+                    <ul>
+                        <li><a href="#work">WORK</a></li>
+                        <li><a href="./pages/about.html">ABOUT</a></li>
+                        <li><a href="#">RESUME <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>     
+        </nav> -->
     </header>
 
     <main>
-        <section class="title">
+        <div class="title">
             <h1>Under the roof</h1>
             <p>An application designed to foster peace and reduce conflicts related to shared living spaces among housemates</p>
             <img src="../asset/img/undertheroof/header.png" alt="under the roof photo">    
-        </section>
+        </div>
 
-        <section class="content">
+        <div class="content">
             <nav class="sidenav"> <!--Sidenav-->
                 <ul>
                     <li><a href="#overview">Overview</a></li>
@@ -53,42 +75,67 @@
             </nav>
 
             <div class="contenttext">
-                <div id="overview"><!--Overview-->
-                    <div class="introleft" style="width: 600px;">
-                        <h3 style="color: #724B34">💡 Overview</h3><br>
-                        <p>Under the Roof is an application that I designed to help users who live together get along harmoniously. With the aim of creating peace and reducing conflicts related to shared living spaces. <br><br> 
-                        I would like to enable users to use shared space in the house freely and plan their schedules effectively, even if they are not close with their housemates. <br><br>
-                        The inspiration for Under the Roof struck me during a visit to a bustling restaurant equipped with an efficient reservation system. Observing how I could reserve a table without enduring long queues sparked the idea of applying a similar solution to address challenges within shared living environments.</p>
+                <section id="overview"><!--Overview-->
+                    <h3>💡 Overview</h3><br>
+                    <div class="box">
+                        <div class="box_left" style="width: 600px;">
+                            <p>Under the Roof is an application that I designed to help users who live together get along harmoniously. With the aim of creating peace and reducing conflicts related to shared living spaces. <br><br> 
+                            I would like to enable users to use shared space in the house freely and plan their schedules effectively, even if they are not close with their housemates. <br><br>
+                            The inspiration for Under the Roof struck me during a visit to a bustling restaurant equipped with an efficient reservation system. Observing how I could reserve a table without enduring long queues sparked the idea of applying a similar solution to address challenges within shared living environments.</p>
+                        </div>
+                        <div class="box_right">
+                            <h4>Role</h4>
+                            <p>UX/UI designer</p><br>
+                            <h4>Duration</h4>
+                            <p>4 Weeks</p><br>
+                            <h4>Platform</h4>
+                            <p>Mobile</p><br>
+                            <h4>Tools</h4>
+                            <p>Figma</p>
+                        </div>
                     </div>
-                    <div class="introright">
-                        <h4>Role</h4>
-                        <p>UX/UI designer</p><br>
-                        <h4>Duration</h4>
-                        <p>4 Weeks</p><br>
-                        <h4>Platform</h4>
-                        <p>Mobile</p><br>
-                        <h4>Tools</h4>
-                        <p>Figma</p>
-                    </div>
-                </div>
+                </section>
 
-                <div id="start"><!--How did it start?-->
-                    <div class="introleft">
-                        <h3 style="color: #724B34">🏃 How did it start?</h3><br>
-                        <div class="carousel-container"> <!-- change to carousel -->
-                            <img src="../asset/img/undertheroof/start1.png" alt="start1">
-                            <img src="../asset/img/undertheroof/start2.png" alt="start1">
-                            <img src="../asset/img/undertheroof/start3.png" alt="start1">
-                            <img src="../asset/img/undertheroof/start4.png" alt="start1">
-                            <img src="../asset/img/undertheroof/start5.png" alt="start1">
-                            <img src="../asset/img/undertheroof/start6.png" alt="start1">
+                <section id="start"><!--How did it start?-->
+                    <div class="box_left">
+                        <h3>🏃 How did it start?</h3><br>
+                        <div class="box"> 
+                            <div class="box_right">
+                                <img src="../asset/img/undertheroof/How did it start_1.png">
+                            </div>
+                            <div class="box_left">
+                                <p>This idea originated when I was working on a project with my team during the Design Sprint subject. 
+                                    We brainstormed various problems that were close to us, leading us to consider the fact that we were all international students living in shared houses while studying in Vancouver. 
+                                    <strong>Each of us faced challenges in living with housemates, whether it was sharing space, dividing household chores, or splitting expenses.</strong> This prompted us to choose this topic for our class project.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box_left">
+                                <p>We began by designing three personas, customer journeys, and running a Crazy 8 exercise. After pitching and voting on ideas, we chose the best concepts and collaboratively sketched the app.</p>
+                            </div>
+                            <div class="box_right">
+                                <img src="../asset/img/undertheroof/How did it start_2.png">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box_left">
+                                <img src="../asset/img/undertheroof/How did it start_3.png">
+                            </div>
+                            <div class="box_right">
+                                <p>After gathering ideas from the Crazy 8 exercise and aligning them with the problem statement, we reorganized and summarized the app to include four main features: <strong>Note-taking, Bill Splitting, Dividing Household Chores, and Booking Shared Space.</strong>Each feature was assigned to different team members, and <strong>I was tasked with Booking Shared Space.</strong></p>
+                            </div>
+                        </div>
+                        <div class="box" id="first_version">
+                            <p>First version of Under the roof <br>(booking shared space feature)</p>
+                            <img src="../asset/img/undertheroof/How did it start_4.png">
+                            <p>After prototyping, I tested the shared space booking feature with three participants and received encouraging feedback. This motivated me to bring the project back, and by revisiting our earlier research, I realized users preferred a focused, single-purpose solution. That insight led me to evolve the concept into a <strong>stand-alone</strong> application.</p>
                         </div>
                     </div> 
-                </div>
+                </section>
                 
-                <div id="problem"><!--Problem-->
-                    <div class="introleft">
-                        <h3 style="color: #724B34">☄️ Problem</h3><br>
+                <section id="problem"><!--Problem-->
+                    <div class="box_left">
+                        <h3>☄️ Problem</h3><br>
                         <p>Before restarting, I conducted further research by reading blogs and comments on social media platforms about the problems faced by people living with housemates, with a focus on those residing in shared houses or apartments in Vancouver</p>
                         <h5>Finding &cudarrr;</h5>
                         <ul>
@@ -98,125 +145,169 @@
                             <li>There is a desire to establish time rules regarding the use of shared spaces</li>
                         </ul>
                     </div>
-                </div>  
+                </section>  
 
-                <div id="solution"><!--Solution-->
-                    <div class="introleft">
-                        <h3 style="color: #724B34">🌟 Solution</h3><br>
+                <section id="solution"><!--Solution-->
+                    <div class="box_left">
+                        <h3>🌟 Solution</h3><br>
                         <p> As a designer, my goal is to help users reduce conflict when they use shared spaces with their housemates by developing an application with a primary feature for <strong>booking queues in specific spaces</strong> within the house and also allowing users to <strong>add notes</strong> without needing face-to-face communication.</p>
-                        <video width="150px" autoplay muted loop><source src="../asset/img/undertheroof/booking.mp4" type="video/mp4"></video>
+                        <div class="box_photo">
+                            <video controls muted><source src="../asset/img/undertheroof/booking.mp4" type="video/mp4"></video>
+                        </div>
                         <p> Also, users have the ability to <strong>customize or design their own space</strong> within the house and set specific times when they are allowed to use the shared space </p>
-                        <video width="150px" autoplay muted loop><source src="../asset/img/undertheroof/add space.mp4" type="video/mp4"></video>
+                       <div class="box_photo">
+                            <video controls muted><source src="../asset/img/undertheroof/add space.mp4" type="video/mp4"></video>
+                        </div>
                     </div>
-                </div> 
+                </section> 
             
-                <div id="persona"><!--Persona-->
-                    <div class="introleft">
-                        <h3 style="color: #724B34">🧑‍💼 Persona</h3><br>
+                <section id="persona"><!--Persona-->
+                    <div class="box_left">
+                        <h3>🧑‍💼 Persona</h3><br>
                         <p>After understanding the users and defining the solution goal, I created <span id =hightlight> Kim </span> as a persona and mapped out his entire journey to provide a clearer visualization of who I was designing for and to identify opportunities for help. Kim is a reliable representation of my key user group for this application.</p>
-                        <img src="../asset/img/undertheroof/persona1.png" alt="persona">
-                        <img src="../asset/img/undertheroof/persona2.png" alt="personaflow">
+                        <div class="box_photo">
+                            <img src="../asset/img/undertheroof/persona1.png" alt="persona">
+                        </div>
+                        <div class="box_photo">
+                            <img src="../asset/img/undertheroof/persona2.png" alt="personaflow">
+                        </div>
                     </div> 
-                </div>
+                </section>
 
-                <div id="ia"><!--Information Architecture-->
-                    <div class="introleft">
-                        <h3 style="color: #724B34">📚 Information Architecture</h3><br>
-                        <img src="../asset/img/undertheroof/IA.png" alt="Information Architecture">
+                <section id="ia"><!--Information Architecture-->
+                    <div class="box_left">
+                        <h3>📚 Information Architecture</h3><br>
+                        <div class="box_photo">
+                            <img src="../asset/img/undertheroof/IA.svg" alt="Information Architecture">
+                        </div>
                     </div> 
-                </div>
+                </section>
 
-                <div id="userflow"><!--User flow-->
-                    <div class="introleft">
-                        <h3 style="color: #724B34">🚕 User flow</h3><br>
-                        <img src="../asset/img/undertheroof/Userflow.png" alt="User flow">
+                <section id="userflow"><!--User flow-->
+                    <div class="box_left">
+                        <h3>🚕 User flow</h3><br>
+                        <div class="box_photo">
+                            <img src="../asset/img/undertheroof/userflow.svg" alt="User flow">
+                        </div>
                     </div> 
-                </div>
+                </section>
 
-                <div id="sketch"><!--Sketching & Wireframe-->
-                    <div class="introleft">
-                        <h3 style="color: #724B34">🖍️ Sketching & Wireframe</h3><br>
+                <section id="sketch"><!--Sketching & Wireframe-->
+                    <div class="box_left">
+                        <h3>🖍️ Sketching & Wireframe</h3><br>
                         <p>After completing the sitemap and user flow, and understanding all aspects of the product's process, I translated my ideas into a digital wireframe. My focus was primarily on functionality and user-friendly design, while also considering the tone and visual style of my product at the same time.</p>
-                        <div class="wireframe"> 
+                        <div class="box_photo"> 
                             <img src="../asset/img/undertheroof/wireframe_1.png" alt="wireframe">
                             <img src="../asset/img/undertheroof/wireframe_2.png" alt="wireframe">
                             <img src="../asset/img/undertheroof/wireframe_3.png" alt="wireframe">
                         </div>
                     </div> 
-                </div>
+                </section>
 
-                <div id="uiinspi"><!--UI inspiration-->
-                    <div class="introleft">
-                        <h3 style="color: #724B34">🎨 UI inspiration</h3><br>
-                        <img src="../asset/img/undertheroof/UI inspiration.png" alt="UI inspiration">
-                    </div> 
-                </div>
-
-                <div id="designsystem"><!--Design system-->
-                    <div class="introleft">
-                        <h3 style="color: #724B34">🛠️Design system</h3><br>
-                        <p>From my UI inspiration, I select <strong> mint and blue </strong> as my primary colors. However, I use light tones of these colors to prevent the design from appearing overly dull. Based on this choice, I selected typography that closely aligns with these tones and decided to stick to just one font to maintain simplicity.</p>
-                        <img src="../asset/img/undertheroof/Design system.png" alt="design system">
-                    </div> 
-                </div>
-
-                 <div id="mockup"><!--Mock up-->
-                    <div class="introleft">
-                        <h3 style="color: #724B34">🖼️Mock up</h3><br>
-                        <div class="carousel-container"> <!-- change to carousel in future-->
-                            <img src="../asset/img/undertheroof/mock up1.png" alt="get start">
-                            <img src="../asset/img/undertheroof/mock up2.png" alt="create an account">
-                            <img src="../asset/img/undertheroof/mock up3.png" alt="sign in">
-                            <img src="../asset/img/undertheroof/mock up4.png" alt="booking space">
-                            <img src="../asset/img/undertheroof/mock up5.png" alt="add more space">
-                            <img src="../asset/img/undertheroof/mock up6.png" alt="others">
+                <section id="uiinspi"><!--UI inspiration-->
+                    <div class="box_left">
+                        <h3>🎨 UI inspiration</h3><br>
+                        <div class="box_photo">
+                            <img src="../asset/img/undertheroof/UI inspiration.png" alt="UI inspiration">
                         </div>
                     </div> 
-                </div>
+                </section>
 
-                <div id="testing"><!--Testing-->
-                    <div class="introleft">
-                        <h3 style="color: #724B34">🧪Testing</h3><br>
+                <section id="designsystem"><!--Design system-->
+                    <div class="box_left">
+                        <h3>🛠️Design system</h3><br>
+                        <p>From my UI inspiration, I select <strong> mint and blue </strong> as my primary colors. However, I use light tones of these colors to prevent the design from appearing overly dull. Based on this choice, I selected typography that closely aligns with these tones and decided to stick to just one font to maintain simplicity.</p>
+                        <div class="box_photo">
+                            <img src="../asset/img/undertheroof/Design system.png" alt="design system">
+                        </div>
+                    </div> 
+                </section>
+
+                 <section id="mockup"><!--Mock up-->
+                    <div class="box_left">
+                        <h3>🖼️Mock up</h3><br>
+                        <p>Flow 1: Get start - Open application</p>
+                        <div class="box_photo">
+                            <img src="../asset/img/undertheroof/mockup_1.png" alt="get start">
+                        </div>
+                        <p>Flow 1: Get start - Create an account</p>
+                        <div class="box_photo">
+                            <img src="../asset/img/undertheroof/mockup_2.png" alt="create an account">
+                        </div>
+                        <p>Flow 1: Get start - Sign in</p>
+                        <div class="box_photo">
+                            <img src="../asset/img/undertheroof/mockup_3.png" alt="sign in">
+                        </div>
+                        <p>Flow 2: Booking space</p>
+                        <div class="box_photo">
+                            <img src="../asset/img/undertheroof/mockup_4.png" alt="booking space">
+                        </div>
+                        <p>Flow 3: Edit / Add more space</p>
+                        <div class="box_photo">
+                            <img src="../asset/img/undertheroof/mockup_5.png" alt="add more space">
+                        </div>
+                        <p>Other pages</p>
+                        <div class="box_photo">
+                            <img src="../asset/img/undertheroof/mockup_6.png" alt="others">
+                        </div>
+                    </div> 
+                </section>
+
+                <section id="testing"><!--Testing-->
+                    <div class="box_left">
+                        <h3>🧪Testing</h3><br>
                        <p>After completing the design process, I conducted testing by interviewing <strong> three international students from Cornerstone college </strong> who live in shared houses in Vancouver. I assigned them five specific tasks to perform. Overall, during the tests, each user was able to complete some tasks without any interruptions, while others had suggestions, and a few experienced minimal breaks. However, there were instances where <strong>all three participants encountered confusion and halted progress at the same point.</strong></p>
-                        <img src="../asset/img/undertheroof/testing.png" alt ="testing result table">
-                        <h5>Make changes &cudarrr;</h5><br>
-                        <!-- task1 -->
-                        <h5>Task : Booking laundry space</h5>
-                        <p>All Participants had a short break between selecting 'Join the roof' and 'Create new roof' due to the use of the specific word 'roof,' which might have caused confusion. Therefore, I changed the button by adding a description.</p>
-                        <img src="../asset/img/undertheroof/test1.svg" alt ="testing task1">
-                        <!-- task2 -->
-                        <h5>Task : Create an account</h5>
-                        <p>All participants can complete this task easily, but two of them suggested that it would be better if they could see their name in the queue after booking more clearly. Therefore, I changed the color of the user's tab</p>
-                        <img src="../asset/img/undertheroof/test2.svg" alt ="testing task1">
-                        <!-- task3 -->
-                        <h5>Task : Add more space</h5>
-                        <p>All participants preferred having separate pages between the 'Edit Space' and 'Add Space' buttons. They also preferred clicking the 'Confirm' or 'Save' button rather than immediately viewing the results. Therefore, I separated these two pages, while users can still add more space from the 'Edit Space' page.</p>
-                        <img src="../asset/img/undertheroof/test3.svg" alt ="testing task3">
+                        <div class="box_photo">
+                            <img src="../asset/img/undertheroof/testing.png" alt ="testing result table">
+                       </div>
+                       <div id="makechange">
+                            <h5>Make changes &cudarrr;</h5><br>
+                            <!-- task1 -->
+                            <h5>Task : Booking laundry space</h5>
+                            <p>All Participants had a short break between selecting 'Join the roof' and 'Create new roof' due to the use of the specific word 'roof,' which might have caused confusion. Therefore, I changed the button by adding a description.</p>
+                            <div class="box_photo">
+                                <img src="../asset/img/undertheroof/testing1.png" alt ="testing task1">
+                            </div>
+                            <!-- task2 -->
+                            <h5>Task : Create an account</h5>
+                            <p>All participants can complete this task easily, but two of them suggested that it would be better if they could see their name in the queue after booking more clearly. Therefore, I changed the color of the user's tab</p>
+                            <div class="box_photo">
+                                <img src="../asset/img/undertheroof/testing2.png" alt ="testing task1">
+                            </div>
+                            <!-- task3 -->
+                            <h5>Task : Add more space</h5>
+                            <p>All participants preferred having separate pages between the 'Edit Space' and 'Add Space' buttons. They also preferred clicking the 'Confirm' or 'Save' button rather than immediately viewing the results. Therefore, I separated these two pages, while users can still add more space from the 'Edit Space' page.</p>
+                            <div class="box_photo">
+                                <img src="../asset/img/undertheroof/testing3.png" alt ="testing task3">
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
 
-                <div id="key"><!--Key takeaway-->
-                    <div class="introleft">
-                        <h3 style="color: #724B34">🗝️ Key takeaway </h3><br>
+                <section id="key"><!--Key takeaway-->
+                    <div class="box_left">
+                        <h3>🗝️ Key takeaway </h3><br>
                         <ul>
                             <li>Doing the crazy 8 exercise amazed me at how we could generate so many ideas in such a limited time, and I would love to do this exercise every time with my team before I start a project.</li><br>
                             <li>This project marked my transition from working in a team to creating a stand-alone app independently. It highlighted the clear differences between collaborative work and solo endeavors. Working in a team made decision-making and voting much easier when unsure about which direction to take, as it allowed me to gain ideas and perspectives from others. It enabled me to understand the problem and find the best way to solve it before launching into real user testing.</li>
                         </ul>
                     </div>
-                </div>  
+                </section>  
             </div>
-        </section>
-    
-        <footer id="contact">
-            <div class="contact">
-                <h3 style="color: #724B34" id="footerhead"> Let's connect!</h3>
-                <a href="mailto:aiya.tosspol@gmail.com" id="email"> <img src="../asset/icon/email.svg" alt="emaillogo"> aiya.tosspol@gmail.com</a> 
-                <a href="www.linkedin.com/in/aiyatossapol" id="linkedin"> <img src="../asset/icon/linkedin.svg" alt="linkedinlogo"> Aiya Tossapol </a> 
-                <a href="https://github.com/aibands" id="github"> <img src="../asset/icon/github.svg" alt="githublogo"> Aibands</a> 
-            </div>
-        </footer>
+        </div>
     </main>
+    
+    <footer id="contact">
+        <div class="contact">
+            <h3 style="color: var(--font-blue)" id="footerhead"> Let's connect!</h3>
+            <div class="contact-text">
+                <a href="mailto:aiya.tosspol@gmail.com" id="email"> <i class="fa-solid fa-envelope"></i> aiya.tosspol@gmail.com</a> 
+                <a href="www.linkedin.com/in/aiyatossapol" id="linkedin"> <i class="fa-brands fa-linkedin"></i> Aiya Tossapol </a> 
+                <a href="https://github.com/aibands" id="github"> <i class="fa-brands fa-github"></i> Aibands</a> 
+            </div>
+        </div>
+    </footer>
 
-
-
-    </section>
+    <script src="../animate.js"></script>
+</body>
+</html>

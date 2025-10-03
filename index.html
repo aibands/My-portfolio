@@ -8,20 +8,31 @@
     <link rel="stylesheet" href="tablet.css">
     <link rel="stylesheet" href="mobile.css"> 
      <script src="https://kit.fontawesome.com/23f8d4ab18.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <a href="#"><img src="./asset/img/logo.svg" alt="logo" id="logo"></a>
         <nav class="menu">
-            <!-- for mode -->
+            <ul>
+                <li><a href="">Work</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- forphone -->
+        <!-- <nav class="menu_mobile">
+            
             <input type="checkbox" id="dark-toggle"> 
             <label for="dark-toggle" class="dark-toggle-label" style="color: var(--font-blue)"><img src="./asset/img/snow.svg" alt="snow" id="snow"></label>
-            <!-- menu -->
+           
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="toggle-label" style="color: var(--font-blue)">&#9776;</label>
-            <!-- menu open -->
+            
             <div class="overlay">
                 <label for="menu-toggle" class="overlay-bg"></label>
                 <div class="overlay-content">
@@ -34,37 +45,34 @@
                     </ul>
                 </div>
             </div>     
-        </nav>
+        </nav> -->
     </header>
 
     
     <main>
         <section class="hero" aria-label="hero">
-            <div class="hi">
-                <div class="variable"><span class="animated-text">DESIGNER</span>&DEVELOPER</div>
-                <div class="static">HELLO, I'M AIYA</div>
-                <picture>
-                    <source srcset="./asset/img/portrait.jpeg" media="(max-width: 768px)">
-                    <img src="./asset/img/landscape.jpg" alt="cat say hi">
-                </picture>
-            </div>
+                <h1>Hello</h1>
+                <h1>I’m <i>Aiya</i></h1>
+                <h1>UX/UI Designer</h1>
+                <h4>and front-end developer </h4>
+                <p>Based in Vancouver</p>
+                <div class="scroll"></div>
         </section>
 
        <!--Feature work--> 
         <section class="feature-work" aria-label="featured work"> 
-            <div class="intro-text">
-                <h3>All these design are made with <span style="color: var(--font-blue)">love</span></h3>
+            <!-- <div class="intro-text">
                 <div class="scroll"></div>
-            </div>
+            </div> -->
             
             
             <div class="work" id="work">
 
             <!--Fanciti-->
                 <div class="project">
-                    <a href="./pages/404.html" class="project-img-wrap">
+                    <div class="project-img-wrap">
                         <img src="./asset/img/Fanciti_mockup.png" alt="Fanciti">
-                    </a>
+                    </div>
                     <div class="project-text">
                         <h4>Fanciti</h4>
                         <p>As an intern at Morethink Solutions, I contributed to building a platform connecting Creators, Brands, and Fans, fostering authentic and vibrant communities.</p>
@@ -117,7 +125,7 @@
                         <img src="./asset/img/undertheroof/Mockup_.png" alt="under the roof">
                     </div>
                     <div class="project-text">
-                        <h4>Under the roof</h4>
+                        <h4>Under The Roof</h4>
                         <p>An application designed to foster peace and reduce conflicts related to shared living spaces among housemates</p>
                         <div class="tag">
                             <p class="tag-text">App design</p> 
@@ -134,7 +142,7 @@
                         <img src="./asset/img/Hit_the_buzzer/Cover.png" alt="Hit the buzzer">
                     </div>
                     <div class="project-text">
-                        <h4>Hit the buzzer!</h4>
+                        <h4>Hit The Buzzer!</h4>
                         <p>A learning application that helps users learn with fun, featuring options to create private classrooms or random decks of knowledge, then challenge others in a familiar game show style</p>
                         <div class="tag">
                             <p class="tag-text">App design</p> 
@@ -152,7 +160,7 @@
                         <img src="./asset/img/Woof_woof/Cover1.png" alt="Woof woof">
                     </div>
                     <div class="project-text">
-                        <h4>Woof woof</h4>
+                        <h4>Woof Woof</h4>
                         <p>A dog food website that aims to help pet owners overcome challenges by providing guidance on selecting quality dog food and planning the best meals for their furry friends</p>
                         <div class="tag">
                             <p class="tag-text">Web design</p> 
@@ -174,13 +182,6 @@
                 <a href="www.linkedin.com/in/aiyatossapol" id="linkedin"> <i class="fa-brands fa-linkedin"></i> Aiya Tossapol </a> 
                 <a href="https://github.com/aibands" id="github"> <i class="fa-brands fa-github"></i> Aibands</a> 
             </div>
-            <form class="sayhi">
-                <label for="hi-input"></label>
-                <div class="input-box">
-                    <input type="text" id="hi-input" name="hi" placeholder="👋 or just say Hi!">
-                    <button>Send</button>
-                </div>
-            </form>    
         </div>
     </footer>
 
