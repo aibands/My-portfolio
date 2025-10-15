@@ -408,16 +408,21 @@
         margin: 2rem;
         display: flex;
         justify-content: center;
+        gap: 6rem;
         padding: 0rem 2rem;
     }
 
         /* sidenav */
     .sidenav {
-        width: 40vw;
+        width: fit-content;
         height: fit-content;
         text-align: left;
         position: sticky;
         top: 100px;
+    }
+
+    .sidenav ul {
+        width: 15rem;
     }
 
     .sidenav li {
@@ -448,6 +453,13 @@
     .title {
         text-align: center;
         padding-top: 7rem;
+        width: 100vw;
+    }
+
+    .title p {
+        text-align: center;
+        width: 60vw;
+        margin: 0 auto;
     }
 
     .title h1 {
@@ -460,21 +472,21 @@
         margin: 2rem 0rem;
     }
 
-    .contenttext h3 {
+    .contenttext h3, .content_center h3 {
         font-size: 2.5rem;
         color: var(--font-blue);
     }
 
-    .contenttext h4 {
+    .contenttext h4, .content_center h4 {
         font-size: 1.5rem;
         color: var(--font-blue);
     }
 
-    .contenttext p {
+    .contenttext p, .content_center p {
         color: var(--font-black);
     }
 
-    .contenttext ul {
+    .contenttext ul, .content_center ul {
         list-style: circle;
         margin-left: 20px;
     }
@@ -486,22 +498,27 @@
     .contenttext video {
         margin: 1.5rem;
         width: 20%;
+        border-radius: 24px;
+    }
+
+    #woofvideo {
+        width: 50%;
+        border-radius: 4px;
     }
 
     .box {
         display: flex;
-        gap: 5rem;
+        gap: 4rem;
     }
 
-    .box_left {
-        width: 65vw;
-    }
+   .box_right {
+        width: 50%;
+   }
 
     .box_photo {
         text-align: center;
         margin: 2rem;
     }
-
 
     #overview,
     #start,
@@ -515,7 +532,11 @@
     #designsystem,
     #mockup,
     #testing,
-    #key {
+    #key,
+    #addfea,
+    #gameflow,
+    #prototype, 
+    #contributed {
         margin-bottom: 5rem;
     }
 
@@ -540,6 +561,83 @@
 
     #makechange img, #mockup img{
         width: 100%;
+    }
+
+    #addfea .box {
+        margin: 3rem;
+    }
+
+   #addfea img {
+        width: 20vw;
+    }
+
+    #addfea .box,#prototype .box {
+        align-items: center;
+    }
+
+    #prototype .box {
+        margin: 2rem;
+    }
+    #prototype video {
+        width: 10vw;
+    }
+
+    #prototype .box_left {
+        width: 100%;
+    }
+
+    #prototype .box_right {
+        text-align: center;
+    }
+
+    .testing_box {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    #testing .positive, #testing .suggested {
+        border: 0.8px solid var(--font-blue);
+        padding: 1rem;
+    }
+
+    #testing .positive ul li, #testing .suggested ul li {
+        list-style: none;
+    }
+
+    #testing .positive ul li::before {
+        content: "🌟 ";
+    }
+
+    #testing .suggested ul li::before {
+        content: "🔧 ";
+    }
+
+    #contenttext_center {
+        padding: 1rem;
+    }
+
+    #overview .box_left ul {
+        list-style: circle;
+    }
+
+    .content_center {
+        padding: 2rem;
+    }
+
+    .dashboard_box {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .dashboard_box img {
+        width: 30%;
+        height: 100%;
+        object-fit: contain;
     }
 
 
