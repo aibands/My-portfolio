@@ -292,18 +292,18 @@
     }
 
     .work a:link,
-    .work a:visited {
+    .work a:visited, .contenttext a:link, .contenttext a:visited, .nda-box a:link, .nda-box a:visited {
         display: inline-block;
         color: var(--font-blue);
         transition: transform 0.3s ease, color 0.3s ease;
     }
 
-    .work a:hover {
+    .work a:hover, .contenttext a:hover, .nda-box a:hover {
         color: var(--font-blue);
         transform: translateY(-5px);
     }
 
-    .work a:active {
+    .work a:active .contenttext a:active, .nda-box a:active {
         color: var(--font-lightblue);
     }
 
@@ -472,7 +472,7 @@
     }
 
     #fintrackpro_prototyping video {
-        width: 20%;
+        width: 17%;
         border-radius: 24px;
     }
 
@@ -660,7 +660,37 @@
         padding: 1rem;
         border-radius: 0.5em;
     }
+    
+    .goal_box {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
 
+    .text_box {
+        text-align: center;
+        background-color: #171717;
+        width: 100%;
+        padding: 2rem;
+        border-radius: 0.5rem
+    }
+
+    .text_box p {
+        color: white;
+    }
+
+    .text_box img {
+        width: 10%;
+    }
+
+    #prime_munchie .box_right, #woof .box_right {
+        width: 100%;
+    }
+    
+    #under p {
+        width: 100%;
+    }
     /* -------------NDA----------- */
     
     .nda {
@@ -709,6 +739,20 @@
     .input-box p:hover {
         color: var(--font-tblue);
     }
+
+    .nda-box button {
+        background-color: var(--font-blue);
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        color: var(--backgroud-color);
+        cursor: pointer;
+    }
+
+    .nda-box button:hover {
+        background-color: var(--font-lightblue);
+    }
+
 
     /* ----------About Page------------ */
 
