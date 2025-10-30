@@ -17,10 +17,44 @@
         <img src="../asset/img/LockKey.svg" alt="logkey">
         <p style="color: var(--font-blue);">This project is under NDA. Please contact me for access.</p>
         <div class="input-box">
-            <input type="password" placeholder="Password">
-            <p>&rarr;</p>
+            <input type="password" placeholder="Password" id="passwordInput">
+            <button onclick="checkPassword()">Submit</button>
         </div>
+        <p id="errorMessage" style="color: var(--font-lightblue);"></p>
+        <a href="../index.html">Back to homepage &rarr;</a>
     </div>
+    
     <script src="../animate.js"></script>
+    <script>
+    // Get ?project=name from the URL
+    const params = new URLSearchParams(window.location.search);
+    const project = params.get("project");
+
+    // Map project name to file
+    const projectPages = {
+      "Fanciti": "../work/fanciti.html",
+      "FintrackPro": "../work/FintrackPro.html",
+      "PrimeMunchies": "../work/prime_munchie.html"
+    };
+
+    function checkPassword() {
+      const input = document.getElementById("passwordInput").value;
+      const errorMsg = document.getElementById("errorMessage");
+
+      const correctPassword = "ThIssIA$ecRe1"; // PASSWORD IS HERE
+
+      if (input === correctPassword) {
+        // Redirect to the correct project
+        const nextPage = projectPages[project];
+        if (nextPage) {
+          window.location.href = nextPage;
+        } else {
+          errorMsg.textContent = "Project not found.";
+        }
+      } else {
+        errorMsg.textContent = "Wrong password. Please try again.";
+      }
+    }
+    </script>
 </body>
 </html>
