@@ -25,34 +25,36 @@
             </ul>
         </nav>
         <!-- forphone -->
-        <!-- <nav class="menu_mobile">
-            
-            <input type="checkbox" id="dark-toggle"> 
-            <label for="dark-toggle" class="dark-toggle-label" style="color: var(--font-blue)"><img src="./asset/img/snow.svg" alt="snow" id="snow"></label>
-           
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="toggle-label" style="color: var(--font-blue)">&#9776;</label>
-            
-            <div class="overlay">
-                <label for="menu-toggle" class="overlay-bg"></label>
-                <div class="overlay-content">
-                    <label for="menu-toggle" class="close-btn"><a>x</a></label>
-                    <ul>
-                        <li><a href="#work">WORK</a></li>
-                        <li><a href="./pages/about.html">ABOUT</a></li>
-                        <li><a href="#">RESUME <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
-                </div>
-            </div>     
-        </nav> -->
+        <nav class="menu_mobile">
+
+        <button id="menu-button" class="menu-button">&#9776;</button>
+
+        <div id="overlay" class="overlay">
+            <div class="overlay-content">
+                <button id="close-button" class="close-btn">×</button>
+                <ul>
+                    <li><a href="#work">WORK</a></li>
+                    <li><a href="./pages/about.html">ABOUT</a></li>
+                    <li><a href="#">RESUME <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
     </header>
 
     
     <main>
         <section class="hero" aria-label="hero">
                 <h1>Hello</h1>
-                <h1>I’m <i style="color: var(--font-lightblue);">Aiya</i></h1>
+                <h1>I’m 
+                    <span class="name-wrap">
+                    <i>Aiya</i>
+                    <svg class="wave" viewBox="0 0 320 100" preserveAspectRatio="xMinYMid" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path id="wave-stroke" d="M1,52 Q72,8 100,52 T270,52" />
+                    </svg>
+                    </span>
+                </h1>
                 <h1>UX/UI Designer</h1>
                 <h4>and front-end developer </h4>
                 <p>Based in Vancouver</p>
@@ -60,17 +62,13 @@
         </section>
 
        <!--Feature work--> 
-        <section class="feature-work" aria-label="featured work"> 
-            <!-- <div class="intro-text">
-                <div class="scroll"></div>
-            </div> -->
-            
-            
+        <section class="feature-work fade-in-section" aria-label="featured work"> 
+                   
             <div class="work" id="work">
 
             <!--Fanciti-->
                 <div class="project">
-                    <a href="./pages/NDA.html?project=Fanciti" style="width: fit-content;">
+                    <a href="./work/fanciti.html">
                         <div class="project-img-wrap">
                             <img src="./asset/img/Fanciti_mockup.png" alt="Fanciti">
                         </div>
@@ -89,7 +87,7 @@
 
             <!--Fintrack pro-->
                 <div class="project">
-                    <a href="./pages/NDA.html?project=FintrackPro" style="width: fit-content;">
+                    <a href="./pages/NDA.html?project=FintrackPro">
                         <div class="project-img-wrap">
                             <img src="./asset/img/FintrackPro/fintrackpro_cover.png" alt="fintrack pro">
                         </div>
@@ -108,7 +106,7 @@
             
             <!--Prime Munchies-->
                 <div class="project">
-                    <a href="./pages/NDA.html?project=PrimeMunchies" style="width: fit-content;">
+                    <a href="./pages/NDA.html?project=PrimeMunchies">
                         <div class="project-img-wrap">
                             <img src="./asset/img/Prime Munchie/fintrackpro_cover.png" alt="Prime munchie">
                         </div>
@@ -127,7 +125,7 @@
 
             <!--UnderTheRoof-->
                 <div class="project">
-                    <a href="./work/undertheroof.html" style="width: fit-content;">
+                    <a href="./work/undertheroof.html">
                         <div class="project-img-wrap">
                             <img src="./asset/img/undertheroof/Mockup_.png" alt="under the roof">
                         </div>
@@ -146,7 +144,7 @@
 
                 <!--Hit the Buzzer!-->
                 <div class="project">
-                    <a href="./work/hit_the_buzzer.html" style="width: fit-content;">
+                    <a href="./work/hit_the_buzzer.html">
                         <div class="project-img-wrap">
                             <img src="./asset/img/Hit_the_buzzer/Cover.png" alt="Hit the buzzer">
                         </div>
@@ -166,7 +164,7 @@
 
                 <!--WoofWoof-->
                 <div class="project">
-                    <a href="./work/woof_woof.html" style="width: fit-content;">
+                    <a href="./work/woof_woof.html">
                         <div class="project-img-wrap">
                             <img src="./asset/img/Woof_woof/Cover1.png" alt="Woof woof">
                         </div>

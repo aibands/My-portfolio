@@ -63,13 +63,47 @@ navLinks.forEach((link) => {
     currentIndex = index;
     document.querySelector('.carousel-images').style.transform = `translateX(-${index * 100}%)`;
   }
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      showImage(currentIndex + 1);
+    });
+  }
+ if (prevBtn) {
+   prevBtn.addEventListener('click', () => {
+     showImage(currentIndex - 1);
+   });
+ }
 
-  nextBtn.addEventListener('click', () => {
-    showImage(currentIndex + 1);
+// wave
+window.addEventListener("load", () => {
+  const strokePath = document.getElementById('wave-stroke');
+  if (!strokePath) return;
+
+  const length = Math.ceil(strokePath.getTotalLength());
+  strokePath.style.setProperty('--path-length', length);
+  strokePath.style.strokeDasharray = length;
+});
+
+
+// hamburgur
+const menuButton = document.getElementById('menu-button');
+const closeButton = document.getElementById('close-button');
+const overlay = document.getElementById('overlay');
+console.log(menuButton)
+if (menuButton && closeButton && overlay) {
+  menuButton.addEventListener('click', () => {
+    overlay.classList.add('active');
   });
 
-  prevBtn.addEventListener('click', () => {
-    showImage(currentIndex - 1);
+  closeButton.addEventListener('click', () => {
+    overlay.classList.remove('active');
   });
 
-
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      overlay.classList.remove('active');
+    }
+  });
+} else {
+  console.warn("Menu elements not found!");
+}
