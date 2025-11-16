@@ -277,7 +277,7 @@
         border: 1px solid;
         color: var(--font-blue);  
         font-weight: 400;
-        border-radius: 100em;
+        border-radius: 0.5rem;
         padding: 0.5rem 1rem;
     }
 
@@ -646,6 +646,20 @@
         padding: 2rem 11rem 0rem 11rem;
     }
 
+    #contributed img {
+        width: 20vw;
+    }
+    
+    #contributed_photo2 img {
+        margin: 4rem 0rem;
+    }
+
+    #contributed .box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
     .dashboard_box {
         display: flex;
         gap: 2rem;
@@ -657,7 +671,8 @@
     .dashboard_box img {
         width: 30%;
         height: 100%;
-        object-fit: contain;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
     }
 
     #testimonials {
@@ -701,7 +716,7 @@
 
     .text_box {
         text-align: center;
-        background-color: #171717;
+        background-color: var(--font-black);
         width: 100%;
         padding: 2rem;
         border-radius: 0.5rem
