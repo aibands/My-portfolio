@@ -4,6 +4,9 @@ The site highlights my design process, development skills, and selected projects
 
 # Features
 Three Featured Projects:
+  - Fanciti - As an intern at Morethink Solutions, I contributed to building a platform connecting Creators, Brands, and Fans, fostering authentic and vibrant communities.
+  - Fintrack Pro - Building an application for FintrackPro to help users track income and expenses, set budgets, and achieve their financial goals.
+  - Prime Munchies - A meal prep service platform that helps people save time with food, offering meals prepared by professional chefs.
   - Under the Roof – An application designed to foster peace and reduce conflicts related to shared living spaces among housemates
   - Hit the Buzzer – A learning application that helps users learn with fun, featuring options to create private classrooms or random decks of knowledge, then challenge others in a familiar game show style
   - Woof Woof – A dog food website that aims to help pet owners overcome challenges by providing guidance on selecting quality dog food and planning the best meals for their furry friends
