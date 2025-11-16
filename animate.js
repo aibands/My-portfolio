@@ -89,7 +89,7 @@ window.addEventListener("load", () => {
 const menuButton = document.getElementById('menu-button');
 const closeButton = document.getElementById('close-button');
 const overlay = document.getElementById('overlay');
-console.log(menuButton)
+
 if (menuButton && closeButton && overlay) {
   menuButton.addEventListener('click', () => {
     overlay.classList.add('active');
@@ -104,6 +104,15 @@ if (menuButton && closeButton && overlay) {
       overlay.classList.remove('active');
     }
   });
+
+  // Close menu when clicking a link inside the overlay
+  const overlayLinks = overlay.querySelectorAll('a');
+  overlayLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      overlay.classList.remove('active');
+    });
+  });
 } else {
   console.warn("Menu elements not found!");
 }
+

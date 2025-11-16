@@ -163,7 +163,7 @@
     .hero {
         margin-top: 10rem;
         width: 100%;
-        height: 60dvh;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -174,11 +174,13 @@
 
     .hero h1 {
         line-height: 80%;
+        text-align: center;
     }
 
     .hero h4 {
         margin: 2rem 0rem;
         font-weight: 200;
+        text-align: center;
     }
 
     /*landing-work*/
@@ -695,7 +697,7 @@
     }
 
     #prototype .box {
-        margin: 2rem;
+        margin: 0rem;
     }
 
     #prototype video {
@@ -716,7 +718,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 3rem;
+        gap: 1rem;
     }
 
     #testing .positive, #testing .suggested {
@@ -836,5 +838,24 @@
     
     #under p {
         width: 100%;
+    }
+
+
+    /* NDA----- */
+
+    .nda {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100dvh;
+    }
+    .nda-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30rem;
+        gap: 1rem;
+        margin: 1rem;
     }
 }
