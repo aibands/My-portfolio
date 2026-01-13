@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="../tablet.css">
     <link rel="stylesheet" href="../mobile.css"> 
      <script src="https://kit.fontawesome.com/23f8d4ab18.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../asset/logo/Favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="../index.html"><img src="../asset/img/logo.svg" alt="logo" id="logo"></a>
+       <a href="../index.html" id="logo-dark"><img src="../asset/logo/logo_dark.svg"></a>
         <nav class="menu">
             <ul>
                 <li><a href="../index.html#work">Work</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="https://drive.google.com/file/d/1kqxuoM1JudKEluOpXSbInLHaWBnBMGK7/view?usp=sharing"
+                <li><a href="https://drive.google.com/file/d/1xejGzm6j1WwaSi1y7Z9Y43oXS28BNfOA/view?usp=sharing"
                     target="_blank" 
                     rel="noopener noreferrer">
                     Resume 
@@ -30,20 +31,20 @@
         <!-- forphone -->
         <nav class="menu_mobile">
 
-        <button id="menu-button" class="menu-button">&#9776;</button>
+        <button id="menu-button" class="menu-button" style="color: var(--font-darkblue);">&#9776;</button>
 
         <div id="overlay" class="overlay">
             <div class="overlay-content">
                 <button id="close-button" class="close-btn">×</button>
                 <ul>
-                    <li><a href="../index.html#work">WORK</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="https://drive.google.com/file/d/1kqxuoM1JudKEluOpXSbInLHaWBnBMGK7/view?usp=sharing"
+                    <li><a href="../index.html#work">Work</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="https://drive.google.com/file/d/1xejGzm6j1WwaSi1y7Z9Y43oXS28BNfOA/view?usp=sharing"
                         target="_blank" 
                         rel="noopener noreferrer">
                         Resume 
                     <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -51,132 +52,41 @@
     </header>
 
     <main class="about">
-        <div class="about_top">
-            <img src="../asset/img/photo.png" alt="my photo">
-            <h3>Hello there, Nice to meet you!</h3>
-            <p>I am <strong>Aiya</strong>, A freelance designer & Front-end developer.</p>
-            <p>I love turning ideas into real products, <strong>supporting businesses</strong> from initial research through implementation :-)</p>
+        <div class="about-top fade-in-section">
+            <h3>Hello, I’m Aiya</h3>
+            <img src="../asset/logo/Hand.svg" id="hand">
         </div>
-
-        <div class="bento">
-            <div class="card experience"> 
-                <!-- Experience -->
-                <p class="bento-title">Experience</p>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h5>Web Developer student @Tamwood College</h5>
-                            <p>Aug 2025 - Present</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h5>Freelance designer @ Motiv Creative labs</h5>
-                            <p>May 2024 - Present</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h5>Co-Op UX/UI designer @ Morethink-Solution</h5>
-                            <p>Apr 2024 - May 2025</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h5>UX/UI design student @ Cornerstone International College</h5>
-                            <p>May 2023 - May 2025</p>
-                        </div>
-                    </div>        
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h5>Graphic & Branding designer @ Milk before bed</h5>
-                            <p>May 2020 - May 2023</p>
-                        </div>
-                    </div>
-
-                </div>
+        <div class="about-box fade-in-section">
+            <div class="about-left">
+                <img src="../asset/img/photo.png" id="myphoto">
+                <img src="../asset/logo/nicetomeetyou.svg" id="ntmy">
             </div>
-
-            <!-- location -->
-            <div class="card location">
-                <div class="map"> 
-                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=vancouver&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-googlemap.com">embed google maps in website</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>                    
-                    <p class="bento-title" id="title_location">location</p>
-                </div>
-            </div>
-
-            <!-- skill -->
-            <div class="card skill">
-                <p class="bento-title">skill</p>
-                <div class="skill_box" style="margin-top: 1rem;">
-                    <h5>Design</h5>
-                    <p>Product design, UX/UX design, Interaction Design, Storyboarding, Visual design, Graphic design, Wireframe, Prototyping, Data visualization, Information architecture, User flow, Persona</p>
-                </div>
-                <div class="skill_box">
-                    <h5>Research</h5>
-                    <p>User interviews, Focused group discussion, Surveys, Competitor analysis, Usability testing, Affinity mapping</p>
-                </div>
-                <div class="skill_box">
-                    <h5>Program</h5>
-                    <p>Figma, Adobe Creative Suite, Blender, HTML, CSS, Tailwind, Bootstrap, JavaScript, React, PHP, Python, WordPress</p>
-                </div>
-            </div>
-
-            <!-- gallery -->
-            <div class="card hobby">
-                <div class="carousel">
-                    <button class="prev">&#8592;</button>
-                    <div class="carousel-images">
-                        <img src="../asset/img/gallery/1.webp" alt="maple leaf in vancouver">
-                        <img src="../asset/img/gallery/2.webp" alt="Edinburgh">
-                        <img src="../asset/img/gallery/3.webp" alt="Edinburgh">
-                        <img src="../asset/img/gallery/4.webp" alt="iced filed parkway">
-                        <img src="../asset/img/gallery/5.webp" alt="jasper">
-                        <img src="../asset/img/gallery/6.webp" alt="gastown">
-                        <img src="../asset/img/gallery/7.webp" alt="anbleside beach">
-                        <img src="../asset/img/gallery/8.webp" alt="highland cow">
-                        <img src="../asset/img/gallery/9.webp" alt="Mt.bromo">
-                        <img src="../asset/img/gallery/10.webp" alt="Mt.bromo">
-                        <img src="../asset/img/gallery/11.webp" alt="victoria">
-                        <img src="../asset/img/gallery/12.webp" alt="Bali">
-                        <img src="../asset/img/gallery/14.webp" alt="Seymour mountain">
-                        <img src="../asset/img/gallery/15.webp" alt="Niangara">
-                        <img src="../asset/img/gallery/16.webp" alt="Pike place market">
-                        <img src="../asset/img/gallery/17.webp" alt="Kitsilano">
-                    </div>
-                    <button class="next">&#8594;</button>
-                    <p class="bento-title" id="title_hobby">Offline Adventure</p>
-                </div>
-            </div>
-
-            <div class="card music">
-                <p class="bento-title">What I am listening</p>
-                <iframe data-testid="embed-iframe" style="border-radius:12px" 
-                src="https://open.spotify.com/embed/track/6MY1xABxoZATrEr4FeUhEM?utm_source=generator&theme=0" 
-                width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="control; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="about-right fade-in-section">
+                <p>
+                    My design journey began when I started my own clothing brand and taught myself design from the ground up. With no formal background at the time, I learned through trial and error, constantly improving by listening to real customer feedback. That experience sparked my passion for UX/UI design and problem-solving through design.<br><br>
+                    I later moved to Canada to study UX/UI design at Cornerstone College, where I gained hands-on experience as a co-op designer at <a href="https://morethinks.com/">Morethink Solutions.</a> There, I helped launch a product called <a href="https://fanciti.com/">Fanciti</a>, working closely with the team to shape the product from early ideas to real features. <br><br>
+                    Currently, I work as a freelance designer at <a href="https://www.motivcreativelabs.com/">Motiv Creative Labs</a> while expanding my skills in web development. My goal is to create meaningful digital products from scratch—combining thoughtful design with technical understanding to bring ideas to life.
+                </p>
             </div>
         </div>
     </main>
 
-    <footer id="contact">
-        <div class="contact">
-            <h3 style="color: var(--font-blue)" id="footerhead"> Let's connect!</h3>
-            <div class="contact-text">
-                <a href="mailto:aiya.tosspol@gmail.com" id="email"> <i class="fa-solid fa-envelope"></i> aiya.tosspol@gmail.com</a> 
-                <a href="www.linkedin.com/in/aiyatossapol" id="linkedin"> <i class="fa-brands fa-linkedin"></i> Aiya Tossapol </a> 
-                <a href="https://github.com/aibands" id="github"> <i class="fa-brands fa-github"></i> Aibands</a> 
+    <div style="background-color: var(--backgroud-color);">
+        <footer>
+            <div class="contact" id="contact">
+                <div class="top">
+                    <img src="../asset/logo/gliter.svg" id="blink">
+                    <h3> LET’S WORK TOGETHER!</h3>
+                    <img src="../asset/logo/Favicon.svg" id="aiya">
+                </div>
+                <div class="contact-text">
+                    <a href="mailto:aiya.tosspol@gmail.com" id="email"> <i class="fa-solid fa-envelope"></i> aiya.tosspol@gmail.com</a> 
+                    <a href="www.linkedin.com/in/aiyatossapol" id="linkedin"> <i class="fa-brands fa-linkedin"></i> Aiya Tossapol </a> 
+                    <a href="https://github.com/aibands" id="github"> <i class="fa-brands fa-github"></i> Aibands</a> 
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="../animate.js"></script>
 </body>

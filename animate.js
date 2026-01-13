@@ -50,41 +50,6 @@ navLinks.forEach((link) => {
 });
 
 
-// about page - gallery
-  const images = document.querySelectorAll('.carousel-images img');
-  const nextBtn = document.querySelector('.next');
-  const prevBtn = document.querySelector('.prev');
-  let currentIndex = 0;
-
-  function showImage(index) {
-    const total = images.length;
-    if (index < 0) index = total - 1;
-    if (index >= total) index = 0;
-    currentIndex = index;
-    document.querySelector('.carousel-images').style.transform = `translateX(-${index * 100}%)`;
-  }
-  if (nextBtn) {
-    nextBtn.addEventListener('click', () => {
-      showImage(currentIndex + 1);
-    });
-  }
- if (prevBtn) {
-   prevBtn.addEventListener('click', () => {
-     showImage(currentIndex - 1);
-   });
- }
-
-// wave
-window.addEventListener("load", () => {
-  const strokePath = document.getElementById('wave-stroke');
-  if (!strokePath) return;
-
-  const length = Math.ceil(strokePath.getTotalLength());
-  strokePath.style.setProperty('--path-length', length);
-  strokePath.style.strokeDasharray = length;
-});
-
-
 // hamburgur
 const menuButton = document.getElementById('menu-button');
 const closeButton = document.getElementById('close-button');
@@ -115,4 +80,30 @@ if (menuButton && closeButton && overlay) {
 } else {
   console.warn("Menu elements not found!");
 }
+
+// fadein
+  const section = document.querySelectorAll('.fade-in-section');
+
+  function checkVisibility() {
+    const triggerBottom = window.innerHeight * 0.9; // 90% of viewport
+
+    section.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+
+      if (sectionTop < triggerBottom) {
+        section.classList.add('visible');
+      }
+      else {
+        section.classList.remove('visible');
+      }
+    });
+  }
+
+  // Run on scroll and on page load
+  window.addEventListener('scroll', checkVisibility);
+  window.addEventListener('load', checkVisibility);
+
+
+
+
 

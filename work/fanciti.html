@@ -9,21 +9,21 @@
     <link rel="stylesheet" href="../tablet.css">
     <link rel="stylesheet" href="../mobile.css">
     <script src="https://kit.fontawesome.com/23f8d4ab18.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../asset/logo/Favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
 </head>
 
 <body>
     <header>
-        <a href="../index.html"><img src="../asset/img/logo.svg" alt="logo" id="logo"></a>
+        <a href="../index.html" id="logo-dark"><img src="../asset/logo/logo_dark.svg"></a>
         <nav class="menu">
             <ul>
                 <li><a href="../index.html#work">Work</a></li>
                 <li><a href="../pages/about.html">About</a></li>
-                <li><a href="https://drive.google.com/file/d/1kqxuoM1JudKEluOpXSbInLHaWBnBMGK7/view?usp=sharing"
+                <li><a href="https://drive.google.com/file/d/1xejGzm6j1WwaSi1y7Z9Y43oXS28BNfOA/view?usp=sharing"
                     target="_blank" 
                     rel="noopener noreferrer">
                     Resume 
@@ -34,143 +34,160 @@
         <!-- forphone -->
         <nav class="menu_mobile">
 
-            <button id="menu-button" class="menu-button">&#9776;</button>
+            <button id="menu-button" class="menu-button" style="color: var(--font-darkblue);">&#9776;</button>
 
             <div id="overlay" class="overlay">
                 <div class="overlay-content">
                     <button id="close-button" class="close-btn">×</button>
                     <ul>
-                        <li><a href="../index.html#work">WORK</a></li>
-                        <li><a href="../pages/about.html">ABOUT</a></li>
-                        <li><a href="https://drive.google.com/file/d/1kqxuoM1JudKEluOpXSbInLHaWBnBMGK7/view?usp=sharing"
+                        <li><a href="../index.html#work">Work</a></li>
+                        <li><a href="../pages/about.html">About</a></li>
+                        <li><a href="https://drive.google.com/file/d/1xejGzm6j1WwaSi1y7Z9Y43oXS28BNfOA/view?usp=sharing"
                             target="_blank" 
                             rel="noopener noreferrer">
                             Resume 
                         <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>                        
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <div class="title" id="fanciti">
+    <main class="work-project">
+        <div class="title fade-in-section" id="fanciti">
             <h1>Fanciti</h1>
-            <p>A platform connecting creators, fans, and brands in a shared community of discovery and collaboration.
-            </p>
             <img src="../asset/img/Fanciti/mockup2.webp" alt="fanciti photo">
         </div>
-
-        <div class="content_center">
-            <section id="overview"><!--Overview-->
-                <h3>💡 Overview</h3><br>
-                <div class="box">
-                    <div class="box_left">
-                        <p>During my co-op internship at <a href="https://morethinks.com/"><strong>Morethink Solutions</strong></a>, I joined as a UX/UI Designer
-                            to work on <a href="https://fanciti.com/"><strong>Fanciti</strong></a>, a new web platform aiming to bring creators, fans, and
-                            brands together in one place.<br><br>
-                            The vision was ambitious:</p>
-                        <ul>
-                            <li><strong>Creators</strong> needed a space to share and sell their products.</li>
-                            <li><strong>Fans</strong> wanted to discover products recommended by people they trust.</li>
-                            <li><strong>Brands</strong> were looking for authentic partnerships with creators.</li>
-                        </ul><br>
-                        <p>Since I joined at the very beginning of the project, I had the opportunity to shape the
-                            product from the ground up—working on research, information architecture, and dashboard
-                            design.</p>
-                    </div>
-
-                    <div class="box_right">
-                        <h4>Role</h4>
-                        <p>UX/UI designer (Co-Op)</p><br>
-                        <h4>Duration</h4>
-                        <p>12 months</p><br>
-                        <h4>Platform</h4>
-                        <p>Desktop, Mobile</p><br>
-                        <h4>Tools</h4>
-                        <p>Figma, Optimal, Click Up</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contributed"><!--How i contributed-->
-                <h3>🤝 How I Contributed</h3><br>
-                <div class="box">
-                    <div class="box_left">
-                        <strong>Research & Discovery</strong>
-                        <ul>
-                            <li>Conducted competitor analysis with the marketing team to identify market gaps and opportunities which shaped our approach to simplify Fanciti’s sign-up flow.</li>
-                            <li>Designed and executed user interviews and surveys to validate features and identify user pain points.</li>
-                            <li>Iterated on features based on usability feedback after testing.</li>
-                        </ul>
-                    </div>
-                    <div class="box_right">
-                        <img src="../asset/img/Fanciti/HowIcon_1.webp" alt="research & discovery">
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="box_left">
-                        <strong>Information Architecture</strong>
-                        <ul>
-                            <li>Helped structure the platform’s information architecture to support three distinct user groups: creators, fans, and brands.</li>
-                            <li>Test multiple IA versions through <strong>tree testing.</strong></li>
-                            <li>Learned to simplify complex user needs into a clear and intuitive navigation flow.</li>
-                        </ul>
-                    </div>
-                    <div class="box_right" id="contributed_photo2">
-                        <img src="../asset/img/Fanciti/HowIcon_2.webp" alt="Information Architecture" >
-                    </div>
-                </div>
-                
-                <strong>Dashboard Design</strong>
-                <ul>
-                    <li>Designed wireframes and mockups for the creator dashboard, which included four key features: Profile, Collection, Analytics and Settings</li>
-                    <li>Conducted <strong>user interview</strong> to validate dashboard navigation and usability.</li>
-                    <li>Iterated designs based on user and team feedback to ensure clarity and efficiency.</li>
-                </ul>
-                <div class="dashboard_box">
-                    <img src="../asset/img/Fanciti/dashboard design1.webp" alt="Dashboard Design1">
-                    <img src="../asset/img/Fanciti/dashboard design2.webp" alt="Dashboard Design2">
-                    <img src="../asset/img/Fanciti/dashboard design3.webp" alt="Dashboard Design3">
-                </div>
-            </section>
-
-            <section id="key"><!--Key takeaway-->
-                <div class="box_left">
-                    <h3>🗝️ Key takeaway </h3><br>
-                    <ul>
-                        <li><strong>End-to-end product design exposure</strong> Working from research to final UI gave me a holistic view of product design.</li>
-                        <li><strong>Collaboration</strong>: Directly engaging with marketing and development teams taught me how to balance business goals with user needs.</li>
-                        <li><strong>Problem-solving for multiple audiences</strong>: Designing for three user groups was challenging but improved my ability to create inclusive and scalable solutions.</li>
-                    </ul><br>
-                    <p>Working at <strong>Fanciti</strong> strengthened my UX research, IA, and UI design skills while showing me how impactful user-centered design can be in shaping a product’s direction.</p>
-                </div>
-            </section>        
-            
-            <section id="testimonials"><!--testimonials-->
-                <div class="ryan">
-                    <img src="../asset/img/Fanciti/ryan.webp">
-                    <div class="ryan-text">
-                        <p>Ryan Thorburn</p>
-                        <strong>Founder & CEO of MoreThinks Solutions</strong>
-                    </div>
-                </div>
-                <p>“I’ve had the pleasure of managing Aiya for just over a year, and she’s been a key contributor across both UX and UI. She’s done a great job using Figma to bring everything together—combining thoughtful user research, clean design systems, and a strong sense of how the product should look and feel. Her attention to detail, user-first mindset, and collaborative approach have made a big impact on the team and the product.”</p>
-            </section>
-        </div>
         
-    <footer id="contact">
-        <div class="contact">
-            <h3 style="color: var(--font-blue)" id="footerhead"> Let's connect!</h3>
-            <div class="contact-text">
-                <a href="mailto:aiya.tosspol@gmail.com" id="email"> <i class="fa-solid fa-envelope"></i> aiya.tosspol@gmail.com</a> 
-                <a href="www.linkedin.com/in/aiyatossapol" id="linkedin"> <i class="fa-brands fa-linkedin"></i> Aiya Tossapol </a> 
-                <a href="https://github.com/aibands" id="github"> <i class="fa-brands fa-github"></i> Aibands</a> 
+        <div class="content">
+            <nav class="sidenav"> <!--Sidenav-->
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#contributed">How I contributed</a></li>
+                    <li><a href="#key">Key takeaway</a></li>
+                </ul>    
+            </nav>
+            
+            <div class="contenttext">
+                <section id="overview" class="fade-in-section"><!--Overview-->
+                    <h3>💡 Overview</h3><br>
+                    <div class="box">
+                        <div class="box_left">
+                            <p>During my co-op internship at <a href="https://morethinks.com/"><strong>Morethink Solutions</strong></a>, I joined as a UX/UI Designer
+                                to work on <a href="https://fanciti.com/"><strong>Fanciti</strong></a>, a new web platform aiming to bring creators, fans, and
+                                brands together in one place.<br><br>
+                                The vision was ambitious:</p>
+                            <ul>
+                                <li><strong>Creators</strong> needed a space to share and sell their products.</li>
+                                <li><strong>Fans</strong> wanted to discover products recommended by people they trust.</li>
+                                <li><strong>Brands</strong> were looking for authentic partnerships with creators.</li>
+                            </ul><br>
+                            <p>Since I joined at the very beginning of the project, I had the opportunity to shape the
+                                product from the ground up—working on research, information architecture, and dashboard
+                                design.</p>
+                        </div>
+
+                        <div class="box_right">
+                            <h4>Role</h4>
+                            <p>UX/UI Designer (Co-Op)</p><br>
+                            <h4>Duration</h4>
+                            <p>12 months</p><br>
+                            <h4>Platform</h4>
+                            <p>Desktop, Mobile</p><br>
+                            <h4>Tools</h4>
+                            <p>Figma, Optimal, Click Up</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contributed" class="fade-in-section"><!--How i contributed-->
+                    <h3>🤝 How I Contributed</h3><br>
+                    <div class="box">
+                        <div class="box_left">
+                            <strong>Research & Discovery</strong>
+                            <ul>
+                                <li>Conducted competitor analysis with the marketing team to identify market gaps and opportunities which shaped our approach to simplify Fanciti’s sign-up flow.</li>
+                                <li>Designed and executed user interviews and surveys to validate features and identify user pain points.</li>
+                                <li>Iterated on features based on usability feedback after testing.</li>
+                            </ul>
+                        </div>
+                        <div class="box_right">
+                            <img src="../asset/img/Fanciti/HowIcon_1.webp" alt="research & discovery">
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box_left">
+                            <strong>Information Architecture</strong>
+                            <ul>
+                                <li>Helped structure the platform’s information architecture to support three distinct user groups: creators, fans, and brands.</li>
+                                <li>Test multiple IA versions through <strong>tree testing.</strong></li>
+                                <li>Learned to simplify complex user needs into a clear and intuitive navigation flow.</li>
+                            </ul>
+                        </div>
+                        <div class="box_right" id="contributed_photo2">
+                            <img src="../asset/img/Fanciti/HowIcon_2.webp" alt="Information Architecture" >
+                        </div>
+                    </div>
+                    
+                    <strong>Dashboard Design</strong>
+                    <ul>
+                        <li>Designed wireframes and mockups for the creator dashboard, which included four key features: Profile, Collection, Analytics and Settings</li>
+                        <li>Conducted <strong>user interview</strong> to validate dashboard navigation and usability.</li>
+                        <li>Iterated designs based on user and team feedback to ensure clarity and efficiency.</li>
+                    </ul>
+                    <div class="dashboard_box">
+                        <img src="../asset/img/Fanciti/dashboard design1.webp" alt="Dashboard Design1">
+                        <img src="../asset/img/Fanciti/dashboard design2.webp" alt="Dashboard Design2">
+                        <img src="../asset/img/Fanciti/dashboard design3.webp" alt="Dashboard Design3">
+                    </div>
+                </section>
+
+                <section id="key" class="fade-in-section"><!--Key takeaway-->
+                    <div class="box_left">
+                        <h3>🗝️ Key takeaway </h3><br>
+                        <ul>
+                            <li>Working from research to final UI gave me a holistic view of product design.</li>
+                            <li>Directly engaging with marketing and development teams taught me how to balance business goals with user needs.</li>
+                            <li>Designing for three user groups was challenging but improved my ability to create inclusive and scalable solutions.</li>
+                        </ul><br>
+                        <p>Working at <strong>Fanciti</strong> strengthened my UX research, IA, and UI design skills while showing me how impactful user-centered design can be in shaping a product’s direction.</p>
+                    </div>
+                </section>       
+                 
+                <h5>What they say about me :)</h5>
+                <section id="testimonials" class="fade-in-section"><!--testimonials-->
+                    <div class="ryan">
+                        <img src="../asset/img/Fanciti/ryan.webp">
+                        <div class="ryan-text">
+                            <p>Ryan Thorburn</p>
+                            <strong>Founder & CEO of MoreThinks Solutions</strong>
+                        </div>
+                    </div>
+                    <p>“I’ve had the pleasure of managing Aiya for just over a year, and she’s been a key contributor across both UX and UI. She’s done a great job using Figma to bring everything together—combining thoughtful user research, clean design systems, and a strong sense of how the product should look and feel. Her attention to detail, user-first mindset, and collaborative approach have made a big impact on the team and the product.”</p>
+                </section>
+
             </div>
         </div>
-    </footer>
+        
+    <div style="background-color: var(--backgroud-color);">
+        <footer>
+            <div class="contact" id="contact">
+                <div class="top">
+                    <img src="../asset/logo/gliter.svg" id="blink">
+                    <h3> LET’S WORK TOGETHER!</h3>
+                    <img src="../asset/logo/Favicon.svg" id="aiya">
+                </div>
+                <div class="contact-text">
+                    <a href="mailto:aiya.tosspol@gmail.com" id="email"> <i class="fa-solid fa-envelope"></i> aiya.tosspol@gmail.com</a> 
+                    <a href="www.linkedin.com/in/aiyatossapol" id="linkedin"> <i class="fa-brands fa-linkedin"></i> Aiya Tossapol </a> 
+                    <a href="https://github.com/aibands" id="github"> <i class="fa-brands fa-github"></i> Aibands</a> 
+                </div>
+            </div>
+        </footer>
+    </div>
+
 
     <script src="../animate.js"></script>
     </main>

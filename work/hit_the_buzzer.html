@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="../tablet.css">
     <link rel="stylesheet" href="../mobile.css"> 
      <script src="https://kit.fontawesome.com/23f8d4ab18.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../asset/logo/Favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="../index.html"><img src="../asset/img/logo.svg" alt="logo" id="logo"></a>
+        <a href="../index.html" id="logo-dark"><img src="../asset/logo/logo_dark.svg"></a>
         <nav class="menu">
             <ul>
                 <li><a href="../index.html#work">Work</a></li>
                 <li><a href="../pages/about.html">About</a></li>
-                <li><a href="https://drive.google.com/file/d/1kqxuoM1JudKEluOpXSbInLHaWBnBMGK7/view?usp=sharing"
+                <li><a href="https://drive.google.com/file/d/1xejGzm6j1WwaSi1y7Z9Y43oXS28BNfOA/view?usp=sharing"
                     target="_blank" 
                     rel="noopener noreferrer">
                     Resume 
@@ -31,30 +32,29 @@
         <!-- forphone -->
         <nav class="menu_mobile">
 
-            <button id="menu-button" class="menu-button">&#9776;</button>
+            <button id="menu-button" class="menu-button" style="color: var(--font-darkblue);">&#9776;</button>
 
             <div id="overlay" class="overlay">
                 <div class="overlay-content">
                     <button id="close-button" class="close-btn">×</button>
                     <ul>
-                        <li><a href="../index.html#work">WORK</a></li>
-                        <li><a href="../pages/about.html">ABOUT</a></li>
-                        <li><a href="https://drive.google.com/file/d/1kqxuoM1JudKEluOpXSbInLHaWBnBMGK7/view?usp=sharing"
+                        <li><a href="../index.html#work">Work</a></li>
+                        <li><a href="../pages/about.html">About</a></li>
+                        <li><a href="https://drive.google.com/file/d/1xejGzm6j1WwaSi1y7Z9Y43oXS28BNfOA/view?usp=sharing"
                             target="_blank" 
                             rel="noopener noreferrer">
                             Resume 
                         <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>                        
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <div class="title">
+    <main class="work-project">
+        <div class="title fade-in-section">
             <h1>Hit the buzzer</h1>
-            <p>A learning application that helps users learn with fun, featuring options to create private classrooms or random decks of knowledge, then challenge others in a familiar game show style</p>  
             <img src="../asset/img/Hit_the_buzzer/Cover2.webp" alt="hit the buzzer photo"> 
         </div>
 
@@ -78,7 +78,7 @@
             </nav>
 
             <div class="contenttext">
-                <section id="overview"><!--Overview-->
+                <section id="overview" class="fade-in-section"><!--Overview-->
                     <h3>💡 Overview</h3><br>
                     <div class="box">
                         <div class="box_left" >
@@ -99,7 +99,7 @@
                     </div>
                 </section>
 
-                <section id="problem"><!--Problem-->
+                <section id="problem" class="fade-in-section"><!--Problem-->
                     <div class="box_left">
                         <h3>☄️ Problem</h3><br>
                         <p>While teaching and asking questions, I always observe my students and have identified two significant problems</p>
@@ -111,7 +111,7 @@
                     </div>
                 </section>  
 
-                <section id="solution"><!--Solution-->
+                <section id="solution" class="fade-in-section"><!--Solution-->
                     <div class="box_left">
                         <h3>🌟 Solution</h3>
                         <p> As a UX designer, my goal is to assist users in learning while making it enjoyable and to decrease guessing behavior when answering questions. I aim to achieve this by developing an application with a <strong>buzzer feature</strong> that requires users to hit the buzzer before answering. If a user hits the buzzer but provides the wrong answer, they will lose points. Therefore, users need to ensure they are confident about their answer before hitting the buzzer to avoid losing the game.</p>
@@ -121,7 +121,7 @@
                     </div>
                 </section> 
 
-                <section id="addfea"><!--Additional feature-->
+                <section id="addfea" class="fade-in-section"><!--Additional feature-->
                     <div class="box_left">
                         <h3>🪄Additional feature</h3><br>
                         <p>While trying to solve the problem, I considered additional features that could be added to this app to make it <strong>a comprehensive learning application rather than just a gamification</strong></p>
@@ -152,7 +152,7 @@
                     </div> 
                 </section>
 
-                <section id="persona"><!--Persona-->
+                <section id="persona" class="fade-in-section"><!--Persona-->
                     <div class="box_left">
                         <h3>🧑‍💼 Persona</h3><br>
                         <p>After defining the solution and additional features, I identified two distinct personas to gain a deeper understanding of users' motivations and goals. The first persona is <strong>Jenna, a teacher seeking to create enjoyable classes with increased student interaction.</strong> The second persona is <strong>Kevin, who loves to spend his free time learning new things.</strong></p>
@@ -165,7 +165,7 @@
                     </div> 
                 </section>
 
-                <section id="ia"><!--Information Architecture-->
+                <section id="ia" class="fade-in-section"><!--Information Architecture-->
                     <div class="box_left">
                         <h3>📚 Information Architecture</h3><br>
                         <div class="box_photo">
@@ -174,7 +174,7 @@
                     </div> 
                 </section>
 
-                <section id="gameflow"><!--Game Flow-->
+                <section id="gameflow" class="fade-in-section"><!--Game Flow-->
                     <div class="box_left">
                         <h3>🎮 Game flow</h3><br>
                         <div class="box_photo">
@@ -183,7 +183,7 @@
                     </div> 
                 </section>
 
-                <section id="sketch"><!--Sketching & Wireframe-->
+                <section id="sketch" class="fade-in-section"><!--Sketching & Wireframe-->
                     <div class="box_left">
                         <h3>🖍️ Sketching & Wireframe</h3><br>
                         <p>After understanding all aspects of the application's process, I translated my ideas into a digital wireframe. This process involved capturing images of each screen, providing a visual representation of the user interface and the overall structure of the digital product</p>
@@ -193,7 +193,7 @@
                     </div> 
                 </section>                
 
-                <section id="designsystem"><!--Design system-->
+                <section id="designsystem" class="fade-in-section"><!--Design system-->
                     <div class="box_left">
                         <h3>🛠️Design system</h3><br>
                         <p>I aim for users to recognize Hit the Buzzer! <strong>as a game rather than a learning app.</strong> To achieve this, I designed the UI to be playful and user-friendly, using bright colors for a lively and enjoyable visual experience. Additionally, I selected typography with a gimmicky effect commonly seen in games</p>
@@ -206,7 +206,7 @@
                     </div> 
                 </section>
 
-                <section id="mockup"><!--Mock up-->
+                <section id="mockup" class="fade-in-section"><!--Mock up-->
                     <div class="box_left">
                         <h3>🖼️Mock up</h3>
                         <div class="box_photo"> 
@@ -215,7 +215,7 @@
                     </div> 
                 </section>        
 
-                <section id="prototype"><!--prototype-->
+                <section id="prototype" class="fade-in-section"><!--prototype-->
                     <h3>🔗 Prototype</h3>
                         <div class="box">
                             <div class="box_left">
@@ -292,7 +292,7 @@
                         </div>
                 </section> 
 
-                <section id="testing"><!--Testing-->
+                <section id="testing" class="fade-in-section"><!--Testing-->
                     <h3>🧪Testing</h3>
                     <p><strong>Participants</strong>: 10 people (ages 15–35, various occupations, enjoy mobile games)</p><br>
                     <p><strong>Method</strong>: 1:1 interviews</p><br>
@@ -328,7 +328,7 @@
                     </div>
                 </section>
 
-                <section id="key"><!--Key takeaway-->
+                <section id="key" class="fade-in-section"><!--Key takeaway-->
                     <div class="box_left">
                         <h3>🗝️ Key takeaway </h3><br>
                         <ul>
@@ -341,16 +341,22 @@
         </div>
     </main>       
 
-    <footer id="contact">
-        <div class="contact">
-            <h3 style="color: var(--font-blue)" id="footerhead"> Let's connect!</h3>
-            <div class="contact-text">
-                <a href="mailto:aiya.tosspol@gmail.com" id="email"> <i class="fa-solid fa-envelope"></i> aiya.tosspol@gmail.com</a> 
-                <a href="www.linkedin.com/in/aiyatossapol" id="linkedin"> <i class="fa-brands fa-linkedin"></i> Aiya Tossapol </a> 
-                <a href="https://github.com/aibands" id="github"> <i class="fa-brands fa-github"></i> Aibands</a> 
+    <div style="background-color: var(--backgroud-color);">
+        <footer>
+            <div class="contact" id="contact">
+                <div class="top">
+                    <img src="../asset/logo/gliter.svg" id="blink">
+                    <h3> LET’S WORK TOGETHER!</h3>
+                    <img src="../asset/logo/Favicon.svg" id="aiya">
+                </div>
+                <div class="contact-text">
+                    <a href="mailto:aiya.tosspol@gmail.com" id="email"> <i class="fa-solid fa-envelope"></i> aiya.tosspol@gmail.com</a> 
+                    <a href="www.linkedin.com/in/aiyatossapol" id="linkedin"> <i class="fa-brands fa-linkedin"></i> Aiya Tossapol </a> 
+                    <a href="https://github.com/aibands" id="github"> <i class="fa-brands fa-github"></i> Aibands</a> 
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="../animate.js"></script>
 </body>
