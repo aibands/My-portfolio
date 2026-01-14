@@ -178,7 +178,12 @@
     }
 
     .hero-lottie {
-        width: 90%;
+        display: none;
+    }
+
+    .hero-mobile {
+        width: 100%;
+        display: block;
     }
 
     /*landing-work*/
@@ -271,7 +276,10 @@
     .contact-text {
         margin-top: 1rem;
         display: flex;
-        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
     }
 
 
@@ -281,11 +289,11 @@
     }
 
     #blink {
-        width: 2rem;
+        width: 1.5rem;
     }
 
     #aiya {
-        width: 4rem;
+        width: 3rem;
         transform: rotate(20deg);
     }
 
@@ -341,7 +349,7 @@
     }
 
     #hand {
-        width: 10%;
+        width: 15%;
         display: inline-block;
         transform-origin: bottom center;
     }
@@ -361,7 +369,7 @@
     
     #ntmy {
         position: absolute;
-        top: 11rem;
+        top: 9rem;
         width: 40%;
     }
 

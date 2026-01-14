@@ -176,6 +176,10 @@
         align-items: center;
     }
     
+    .hero-mobile {
+        display: none;
+    }
+    
     /*landing-work*/
 
     .feature-work {
