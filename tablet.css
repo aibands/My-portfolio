@@ -288,6 +288,15 @@
         border: 1px solid var(--font-blue);
         margin-bottom: 0.5rem;
     }
+    
+    #myphoto {
+        width: 90%;
+    }
+
+    #myphoto_mobile {
+        width: 90%;
+        display: none;
+    }
 
     /* -----NDA----- */
     

@@ -364,13 +364,16 @@
     }
 
     #myphoto {
-        width: 50%;
+        display: none;
     }
     
     #ntmy {
-        position: absolute;
-        top: 9rem;
-        width: 40%;
+        display: none;
+    }
+
+    #myphoto_mobile {
+        width: 50%;
+        display: block;
     }
 
   /*-----------work page-------------*/

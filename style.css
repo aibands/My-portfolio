@@ -731,6 +731,11 @@
         width: 90%;
     }
 
+    #myphoto_mobile {
+        width: 90%;
+        display: none;
+    }
+
     #ntmy {
         position: absolute;
         width: 80%;
